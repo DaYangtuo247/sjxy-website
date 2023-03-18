@@ -1,0 +1,9 @@
+<img src="${v_link('/imgs/position.png')}">当前位置：您的位置：
+<#list list_menu as menu>
+  <#if (menu.pos > 1)> &gt; </#if>
+  <#if menu.linkUrl != "">
+    <a href="${menu.linkUrl}">${menu.showName}</a>
+  <#else>
+    ${menu.name}
+  </#if>
+</#list>

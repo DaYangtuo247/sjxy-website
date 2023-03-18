@@ -1,0 +1,11 @@
+<div class="teacher-box">
+<#list list_news as news>
+  <div class="teacher-item">
+    <div class="teacher-image-box">
+      <img class="teacher-image" src="${news.picUrl}" href="${news.url}">
+    </div>
+    <a class="teacher-name" href="${news.url}">${news.showTitle}</a>
+  </div>
+</#list>
+</div>
+<div class="page-bar">${pageBar}</div>

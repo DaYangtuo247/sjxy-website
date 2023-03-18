@@ -44,7 +44,7 @@ info: Microsoft.Hosting.Lifetime[0]
 
 
 
-### 路径规范
+### 路径规范(默认根路径`src/`)
 
 * `JavaScript`文件统一放在`JavaScript`文件夹下，例如`jquery.js`放在`JavaScript`文件夹内
 * `js`插件统一放在`JavaScript/plugs`文件夹下，例如`banner`图滚动插件

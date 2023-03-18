@@ -1,0 +1,14 @@
+<h3 class="part-title">
+  <a class="more" href="http://sjxy.whpu.edu.cn/index/xgdt.htm">更多&gt;</a>
+  <img src="${v_link('/imgs/title_3.png')}" />
+</h3>
+<!--/system/go.jsp?treeid=1111&apptype=treetemp&urltype=tree.TreeTempUrl-->
+
+<div class="part-item-box">
+<#list list_news as news>
+<div class="part-item">
+  <span class="item-date">${news.showDate}</span>
+  <a class="item-title" href="${news.url}">${news.showTitle}</a>
+</div>
+</#list>
+</div>

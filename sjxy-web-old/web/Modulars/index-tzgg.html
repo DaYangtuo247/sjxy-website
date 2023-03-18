@@ -1,0 +1,13 @@
+<h3 class="part-title">
+  <a class="more" href="http://sjxy.whpu.edu.cn/index/tzgg.htm">更多&gt;</a>
+  <img src="${v_link('/imgs/title_2.png')}" />
+</h3>
+
+<div class="part-item-box">
+<#list list_news as news>
+<div class="part-item">
+  <span class="item-date">${news.showDate}</span>
+  <a class="item-title" href="${news.url}">${news.showTitle}</a>
+</div>
+</#list>
+</div>

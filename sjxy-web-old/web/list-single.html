@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <link rel="stylesheet" type="text/css" href="css/new_style2.css" />
+    <script src="js/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div class="top-div">
+      <img class="logo" src="imgs/img_top.png" />
+      <!--#begineditable name="网站导航" action="webber.wbst.com.nav.MenuAction" layout="/system/_component/sitenav/tplvnav.jsp" tpltype="1" contype="" clone="" viewid="271735" contentviewid="" tagname="网站导航"-->elementname<!--#endeditable-->
+    </div>
+
+    <div class="content-container">
+      <div class="content">
+        <div class="banner">
+          <ul class="img">
+            <li>
+              <a><img src="./imgs/banner0_c.jpg" /></a>
+            </li>
+            <li>
+              <a><img src="./imgs/banner1_c.jpg" /></a>
+            </li>
+            <li>
+              <a><img src="./imgs/banner2_c.jpg" /></a>
+            </li>
+            <li>
+              <a><img src="./imgs/banner3_c.jpg" /></a>
+            </li>
+            <li>
+              <a><img src="./imgs/banner4_c.jpg" /></a>
+            </li>
+          </ul>
+          <ul class="num"></ul>
+          <div class="btn btn_l">&lt;</div>
+          <div class="btn btn_r">&gt;</div>
+        </div>
+        <div class="current-position">
+          <!--#begineditable name="当前位置" action="webber.wbst.com.util.SitelinkAction" layout="/system/_component/sitenav/tplcurposition.jsp" tpltype="1" contype="" clone="" viewid="208946" contentviewid="" tagname="当前位置"-->elementname<!--#endeditable-->
+        </div>
+        <div>
+          <div class="left-nav">
+            <!--#begineditable name="侧边导航" action="webber.wbst.com.nav.MenuAction" layout="/system/_component/sitenav/tplvnav.jsp" tpltype="1" contype="" clone="" viewid="208945" contentviewid="" tagname="侧边导航"-->elementname<!--#endeditable-->
+          </div>
+          <div class="right-content">
+            <!--#begineditable name="单篇正文" action="webber.wbst.com.news.ColumnNews" layout="/system/_component/news/list/tplcontentlist.jsp" tpltype="1" contype="news" clone="" viewid="208948" contentviewid="" tagname="单篇正文"-->elementname<!--#endeditable-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>武汉轻工大学 数学与计算机学院</p>
+      <p>地址： 湖北省武汉市东西湖区环湖中路36号 邮编：430048</p>
+      <p>学院电话：027-85504742　学工办：027-85504733</p>
+    </div>
+
+    <script>
+      $("body").css("font-size", document.body.clientWidth / 100 + "px");
+      $(window).bind("resize", function () {
+        if (document.body.clientWidth > 1200) {
+          //console.log("网页可见区域宽："+document.body.clientWidth);
+          var width = document.body.clientWidth / 100 + "px";
+          $("body").css("font-size", width);
+        } else {
+          var widith = document.body.clientWidth / 150 + "px";
+          $("body").css("font-size", width);
+        }
+      });
+    </script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        var i = 0;
+
+        var clone = $(".banner .img li").first().clone(); //克隆第一张图片
+        $(".banner .img").append(clone); //复制到列表最后
+        var size = $(".banner .img li").length;
+        $(".banner .img").css({ width: size * 100 + "%" });
+        $(".banner .img li").css({ width: 100 / size + "%" });
+
+        for (var j = 0; j < size - 1; j++) {
+          $(".banner .num").append("<li></li>");
+        }
+
+        $(".banner .num li").first().addClass("on");
+
+        /*自动轮播*/
+
+        var t = setInterval(function () {
+          i++;
+          move();
+        }, 5400);
+
+        /*鼠标悬停事件*/
+
+        $(".banner").hover(
+          function () {
+            clearInterval(t); //鼠标悬停时清除定时器
+          },
+          function () {
+            t = setInterval(function () {
+              i++;
+              move();
+            }, 5400); //鼠标移出时清除定时器
+          }
+        );
+
+        /*鼠标滑入原点事件*/
+
+        $(".banner .num li").hover(function () {
+          var index = $(this).index(); //获取当前索引值
+          i = index;
+          $(".banner .img")
+            .stop()
+            .animate({ left: -index * 100 + "%" }, 500);
+          $(this).addClass("on").siblings().removeClass("on");
+        });
+
+        /*向左按钮*/
+        $(".banner .btn_l").click(function () {
+          i--;
+          move();
+        });
+
+        /*向右按钮*/
+        $(".banner .btn_r").click(function () {
+          i++;
+          move();
+        });
+
+        /*移动事件*/
+        function move() {
+          if (i == size) {
+            $(".banner .img").css({ left: 0 });
+            i = 1;
+          }
+          if (i == -1) {
+            $(".banner .img").css({ left: -(size - 1) * 100 + "%" });
+            i = size - 2;
+          }
+          $(".banner .img")
+            .stop()
+            .animate({ left: -i * 100 + "%" }, 500);
+
+          if (i == size - 1) {
+            $(".banner .num li").eq(0).addClass("on").siblings().removeClass("on");
+          } else {
+            $(".banner .num li").eq(i).addClass("on").siblings().removeClass("on");
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
