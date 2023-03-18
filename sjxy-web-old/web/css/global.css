@@ -1,0 +1,111 @@
+body {
+    background: #a28b76;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+img {
+    margin: 0;
+    border: none;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+
+/* region begin top */
+
+
+/* .box {
+    height: 95.1375px;
+} */
+
+.top-div {
+    /* background-color: #a28b76; */
+    /* background: url(../images/banner-shadow.png) 100%;
+    background-size: ; */
+    /* display: none; */
+    background-image: linear-gradient(#0052d4cc, #65c7f7c9, #9cecfb00);
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.logo {
+    height: 6em;
+}
+
+.nav-div {
+    margin-top: 2em;
+    margin-bottom: 2.5em;
+    margin-right: 1em;
+    vertical-align: middle;
+    position: absolute;
+    z-index: 999;
+    display: inline-block;
+    /* ie 7 */
+    *display: inline;
+    *zoom: 1;
+    right: 5em;
+}
+
+.nav-div ul {
+    display: inline-block;
+}
+
+.nav-div a {
+    color: #f2f2f2;
+}
+
+.nav-div ul li {
+    position: relative;
+    padding: 0.5em;
+    line-height: 1.3em;
+    display: inline-block;
+    /* ie 7 */
+    *display: inline;
+    *zoom: 1;
+}
+
+.nav-div ul li div {
+    display: none;
+}
+
+.nav-div ul li:hover {
+    background-color: #6d492f;
+}
+
+.nav-div ul li div a:hover {
+    background-color: #e4ce8c;
+    color: #6d492f;
+}
+
+.nav-div ul li:hover div {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+}
+
+.nav-div ul li div a {
+    display: block;
+    text-align: center;
+    width: 100%;
+    background-color: #6d492f;
+    padding: 0.5em 0;
+}
