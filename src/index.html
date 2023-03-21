@@ -2,85 +2,53 @@
 <html lang="zh-CN">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="renderer" content="webkit" />
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
-    <link rel="stylesheet" href="css/global.css">
-    <script src="js/jquery.min.js"></script>
-    <script src="js/global.js"></script>
-    <title>武汉轻工大学数学与计算机学院</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>武汉轻工大学 数学与计算机学院</title>
+    <meta name="discription" content="武汉轻工大学 数学与计算机学院官方网站" />
+    <meta name="keyword" content="武汉轻工大学 数学与计算机学院官方网站" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <script src="./js/swiper-bundle.min.js"></script>
 </head>
 
 <body>
+    <!-- 轮播图 start -->
+    <div class="banner">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./img/banner/banner0.jpg"></div>
+                <div class="swiper-slide"><img src="./img/banner/banner1.jpg"></div>
+                <div class="swiper-slide"><img src="./img/banner/banner2.jpg"></div>
+                <div class="swiper-slide"><img src="./img/banner/banner3.jpg"></div>
+            </div>
+            <!-- 分页器 -->
+            <div class="swiper-pagination"></div>
 
-    <div class="top-div">
-        <img class="logo" src="imgs/img_top.png" />
-        <!--#begineditable name="网站导航" action="webber.wbst.com.nav.MenuAction" layout="/system/_component/sitenav/tplvnav.jsp" tpltype="1" contype="" clone="" viewid="271735" contentviewid="" tagname="网站导航"-->elementname
-        <!--#endeditable-->
-    </div>
-
-    <div class="content-container">
-        <div class="content">
-            <div class="banner">
-                <ul class="img">
-                    <li>
-                        <a><img src="./imgs/banner6.jpg" /></a>
-                    </li>
-                    <li>
-                        <a><img src="./imgs/banner0_c.jpg" /></a>
-                    </li>
-                    <li>
-                        <a><img src="./imgs/banner1_c.jpg" /></a>
-                    </li>
-                    <li>
-                        <a><img src="./imgs/banner2_c.jpg" /></a>
-                    </li>
-                    <li>
-                        <a><img src="./imgs/banner4_c.jpg" /></a>
-                    </li>
-                </ul>
-                <ul class="num"></ul>
-                <div class="btn btn_l">&lt;</div>
-                <div class="btn btn_r">&gt;</div>
-            </div>
-            <div class="part-area">
-                <div class="part part-1">
-                    <!--#begineditable name="xyxw" action="webber.wbst.com.news.ColumnNews" layout="/system/_component/news/list/tpltitlelist.jsp" tpltype="1" contype="news" clone="" viewid="208940" contentviewid="" tagname="xyxw"-->elementname
-                    <!--#endeditable-->
-                </div>
-                <div class="part part-2">
-                    <!--#begineditable name="tzgg" action="webber.wbst.com.news.ColumnNews" layout="/system/_component/news/list/tpltitlelist.jsp" tpltype="1" contype="news" clone="" viewid="208939" contentviewid="" tagname="tzgg"-->elementname
-                    <!--#endeditable-->
-                </div>
-                <div class="part part-3">
-                    <!--#begineditable name="sjgs" action="webber.wbst.com.news.ColumnNews" layout="/system/_component/news/list/tpltitlelist.jsp" tpltype="1" contype="news" clone="" viewid="208941" contentviewid="" tagname="sjgs"-->elementname
-                    <!--#endeditable-->
-                </div>
-                <div class="part part-4">
-                    <!--#begineditable name="xslt" action="webber.wbst.com.news.ColumnNews" layout="/system/_component/news/list/tpltitlelist.jsp" tpltype="1" contype="news" clone="" viewid="208942" contentviewid="" tagname="xslt"-->elementname
-                    <!--#endeditable-->
-                </div>
-                <div class="part part-5">
-                    <!--#begineditable name="服务专区" action="webber.wbst.com.news.ColumnNews" layout="/system/_component/news/list/tpltitlelist.jsp" tpltype="1" contype="news" clone="" viewid="208949" contentviewid="" tagname="服务专区"-->elementname
-                    <!--#endeditable-->
-                </div>
-            </div>
-            <div class="part part-6 part-cylj">
-                <h3 class="part-title"><img src="imgs/title_6.png" /></h3>
-                <div>
-                    <a href="https://www.icourse163.org/university/COMPUTER#/c" target="_blank">中国高校计算机教育MOOC联盟</a>
-                    <a href="http://www.icst.pku.edu.cn/" target="_blank">北京大学计算机科学技术研究所</a>
-                    <a href="http://www.cs.tsinghua.edu.cn/" target="_blank">清华大学计算机科学与技术系</a>
-                </div>
-            </div>
         </div>
     </div>
-
-    <div class="footer">
-        <p>武汉轻工大学 数学与计算机学院</p>
-        <p>地址： 湖北省武汉市东西湖区环湖中路36号 邮编：430048</p>
-        <p>学院电话：027-85504742　学工办：027-85504733</p>
-    </div>
+    <!-- 轮播图 end -->
 </body>
+
+
+<script>
+    var mySwiper = new Swiper('.swiper', {
+        loop: true, // 无限循环属性
+
+        // 分页器
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+        },
+
+        //自动切换
+        autoplay: {
+            delay: 3000,
+            stopOnLastSlide: false,
+            disableOnInteraction: true,
+        },
+    })        
+</script>
 
 </html>
