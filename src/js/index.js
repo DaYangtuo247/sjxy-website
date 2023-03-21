@@ -1,18 +1,19 @@
-var mySwiper = new Swiper('.swiper', {
-    loop: true, // 无限循环属性
+$(function () {
+    new Swiper('.swiper', {
+        loop: true, // 无限循环属性
+        // 分页器
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+        },
 
-    // 分页器
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true
-    },
-
-    //自动切换
-    autoplay: {
-        delay: 3000,
-        stopOnLastSlide: false,
-        disableOnInteraction: true,
-    },
+        //自动切换
+        autoplay: {
+            delay: 3000,
+            stopOnLastSlide: false,
+            disableOnInteraction: true,
+        },
+    })
 })
 function showSearch() {
     let searchBut = document.getElementById('searchBut'),
