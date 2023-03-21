@@ -9,11 +9,116 @@
     <meta name="discription" content="武汉轻工大学 数学与计算机学院官方网站" />
     <meta name="keyword" content="武汉轻工大学 数学与计算机学院官方网站" />
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <!-- 导航栏 start -->
+    <div class="top-div">
+        <a href="http://www.whpu.edu.cn/">
+            <img class="logo" src="img/web-logo.png" />
+        </a>
+        <div class="nav-container">
+            <!--#begineditable name="网站导航" action="webber.wbst.com.nav.MenuAction" layout="/system/_component/sitenav/tplvnav.jsp" tpltype="1" contype="" clone="" viewid="271735" contentviewid="" tagname="网站导航"-->
+            <div class="nav-div">
+                <ul>
+                    <li>
+                        <a href="xygk/xyjj.htm">学院概况</a>
+                        <div>
+                            <a href="xygk/xyjj.htm">学院简介</a>
+                            <a href="xygk/xrld.htm">现任领导</a>
+                            <a href="xygk/jgsz.htm">机构设置</a>
+                            <span>
+                                <a href="#">学院行政办公室</a>
+                                <a href="#">学生工作办公室</a>
+                                <a href="#">学院系部办公室</a>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="szdw/zrjs.htm">师资队伍</a>
+                        <div>
+                            <a href="szdw/zrjs.htm">信息与计算系</a>
+                            <a href="szdw/ssds.htm">B系</a>
+                            <a href="szdw/gcrc.htm">C系</a>
+                            <a href="#">公共教学系</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">学科建设</a>
+                        <div>
+                            <a href="#">重点学科</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="bksjy/pyfa.htm">本科生教育</a>
+                        <div>
+                            <a href="bksjy/pyfa.htm">培养方案</a>
+                            <a href="bksjy/zyjs.htm">专业介绍</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="yjsjy/pyfa.htm">研究生教育</a>
+                        <div>
+                            <a href="yjsjy/pyfa.htm">培养方案</a>
+                            <a href="yjsjy/zyjs.htm">专业介绍</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">党建工作</a>
+                        <div>
+                            <a href="#">党务通知</a>
+                            <a href="#">党建动态</a>
+                            <a href="#">上级文件</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">校友之窗</a>
+                        <div>
+                            <a href="#">校友名册</a>
+                            <a href="#">校友活动</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">实习基地</a>
+                        <div>
+                            <a href="#">校外</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="syzx/syzx.htm">实验中心</a>
+                    </li>
+                </ul>
+            </div>
+            <!--#endeditable-->
+            <!--#begineditable name="简单检索" action="webber.wbst.com.news.SearchList" layout="/system/_component/searchlist/tplentry1.jsp" tpltype="1" contype="" clone="" viewid="1031154" contentviewid="" tagname="简单检索"-->
+            <div class="search">
+                <form action="serch.jsp?wbtreeid=1001" method="post" name="a1031154a" onsubmit="return subsearchdataa1031154a()" style="display: inline;">
+                    <input type="hidden" name="Find" value="find"><input type="hidden" name="entrymode" value="1"><input type="hidden" id="INTEXT2" name="INTEXT2" value=""><input type="hidden" name="news_search_code">
+                    <table border="0" cellspacing="1" cellpadding="0" style="display: inline-table;">
+                        <tr>
+                            <td Valign="middle" nowrap="nowrap" height="22">
+                                <span style="font-size:9pt;"></span>
+                            </td>
+                            <td>
+                                <span id="intextspana1031154a"></span>
+                                <iframe id="intextframea1031154a" src="about:blank" scrolling="no" frameborder="0" style="position:absolute;top:0px;left:0px;display:none;"></iframe>
+                                <input size="12" name="INTEXT" style="height:22px">
+                            </td>
+                            <td align="absmiddle" nowrap="nowrap" height="1">
+                                <input type="image" src="imgs/magnifier.png" align="absmiddle" valign="bottom" style="cursor: hand">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <!-- 导航栏 end -->
     <!-- 轮播图 start -->
     <div class="banner">
         <div class="swiper">
@@ -47,7 +152,7 @@
             stopOnLastSlide: false,
             disableOnInteraction: true,
         },
-    })        
+    })
 </script>
 
 </html>

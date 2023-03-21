@@ -1,0 +1,248 @@
+/* body {
+    background: #a28b76;
+    margin: 0;
+} */
+
+
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+img {
+    margin: 0;
+    border: none;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+
+/* region begin top */
+
+
+/* .box {
+    height: 95.1375px;
+} */
+
+.top-div {
+    /* background-color: #a28b76; */
+    /* background: url(../images/banner-shadow.png) 100%;
+    background-size: ; */
+    /* display: none; */
+    background-image: linear-gradient(#0052d4cc, #65c7f7c9, #9cecfb00);
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 7em;
+}
+
+.logo {
+    height: 6em;
+}
+
+.nav-container {
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+    margin-right: 1em;
+    vertical-align: middle;
+    position: absolute;
+    z-index: 999;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    right: 0;
+    /* ie 7 */
+    *display: inline;
+    *zoom: 1;
+}
+
+.nav-div ul {
+    display: inline-block;
+}
+
+.nav-div a {
+    color: #fff;
+}
+
+.nav-div ul li {
+    position: relative;
+    padding: 0.5em;
+    line-height: 1.3em;
+    display: inline-block;
+    /* ie 7 */
+    *display: inline;
+    *zoom: 1;
+    overflow: visible;
+}
+
+.nav-div ul li div {
+    display: none;
+    width: 100%;
+    -webkit-animation-name: fadeInUpnav;
+    animation-name: fadeInUpnav;
+    animation-duration: 0.4s;
+    -webkit-animation-duration: 0.4s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+    visibility: visible !important;
+}
+
+.nav-div ul li div:nth-child(2) {
+    width: 7em!important;
+}
+
+.nav-div ul li:hover {
+    background-color: #65c7f7c9;
+}
+
+.nav-div ul li div a:hover {
+    background-color: #f2f2f2;
+    color: #65c7f7c9;
+}
+
+.nav-div ul li:hover div {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 3em;
+    left: 0;
+}
+
+.nav-div ul li div:hover {
+    display: block;
+}
+
+.nav-div ul li div::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-bottom-color: #03A9F4;
+    position: absolute;
+    left: 0;
+    top: -1.25em;
+}
+
+.nav-div ul li div::after {
+    content: '';
+    width: 100%;
+    height: 1.2em;
+    position: absolute;
+    background-color: transparent;
+    top: -1.1em;
+}
+
+.nav-div ul li span {
+    display: none;
+    position: absolute;
+    /* padding: 0.5em; */
+    line-height: 1.3em;
+    left: 7.7em;
+    top: 2.35em;
+    background-color: #03A9F4;
+}
+
+.nav-div ul li span a {
+    display: block;
+    padding: 0.5em 0.7em!important;
+}
+
+.nav-div ul li div span::after {
+    content: '';
+    width: 1.2em;
+    height: 100%;
+    position: absolute;
+    background-color: transparent;
+    left: -1.1em;
+    top: 0;
+}
+
+.nav-div ul li div span::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-right-color: #03A9F4;
+    position: absolute;
+    left: -1.25em;
+    top: 2.75em;
+}
+
+.nav-div ul li a:nth-child(3):hover+span {
+    display: block;
+    -webkit-animation-name: fadeInUpnav;
+    animation-name: fadeInUpnav;
+    animation-duration: 0.4s;
+    -webkit-animation-duration: 0.4s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+    visibility: visible !important;
+}
+
+.nav-div ul li a:nth-child(3)+span:hover {
+    display: block;
+}
+
+.nav-div ul li div a {
+    display: block;
+    text-align: center;
+    width: 100%;
+    background-color: #03A9F4;
+    padding: 0.5em 0;
+    word-break: keep-all;
+}
+
+
+/* 搜索栏样式 */
+
+.search {
+    position: absolute;
+    right: 0;
+    top: -2em;
+}
+
+@-webkit-keyframes fadeInUpnav {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 20px, 0);
+        transform: translate3d(0, 20px, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInUpnav {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 20px, 0);
+        -ms-transform: translate3d(0, 20px, 0);
+        transform: translate3d(0, 20px, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+    }
+}
