@@ -12,17 +12,18 @@
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
 </head>
 
 <body>
     <!-- 导航栏 start -->
-    <div class="top-div">
+    <div class="header">
         <a href="http://www.whpu.edu.cn/">
             <img class="logo" src="img/web-logo.png" />
         </a>
         <div class="nav-container">
-            <!--#begineditable name="网站导航" action="webber.wbst.com.nav.MenuAction" layout="/system/_component/sitenav/tplvnav.jsp" tpltype="1" contype="" clone="" viewid="271735" contentviewid="" tagname="网站导航"-->
             <div class="nav-div">
                 <ul>
                     <li>
@@ -93,27 +94,9 @@
                     </li>
                 </ul>
             </div>
-            <!--#endeditable-->
-            <!--#begineditable name="简单检索" action="webber.wbst.com.news.SearchList" layout="/system/_component/searchlist/tplentry1.jsp" tpltype="1" contype="" clone="" viewid="1031154" contentviewid="" tagname="简单检索"-->
             <div class="search">
-                <form action="serch.jsp?wbtreeid=1001" method="post" name="a1031154a" onsubmit="return subsearchdataa1031154a()" style="display: inline;">
-                    <input type="hidden" name="Find" value="find"><input type="hidden" name="entrymode" value="1"><input type="hidden" id="INTEXT2" name="INTEXT2" value=""><input type="hidden" name="news_search_code">
-                    <table border="0" cellspacing="1" cellpadding="0" style="display: inline-table;">
-                        <tr>
-                            <td Valign="middle" nowrap="nowrap" height="22">
-                                <span style="font-size:9pt;"></span>
-                            </td>
-                            <td>
-                                <span id="intextspana1031154a"></span>
-                                <iframe id="intextframea1031154a" src="about:blank" scrolling="no" frameborder="0" style="position:absolute;top:0px;left:0px;display:none;"></iframe>
-                                <input size="12" name="INTEXT" style="height:22px">
-                            </td>
-                            <td align="absmiddle" nowrap="nowrap" height="1">
-                                <input type="image" src="imgs/magnifier.png" align="absmiddle" valign="bottom" style="cursor: hand">
-                            </td>
-                        </tr>
-                    </table>
-                </form>
+                <input type="text" placeholder="输入需要查找的内容" id="searchText"><input type="button" value="&#xe8b9;"
+                    class="iconfont" id="searchBut" onclick="showSearch()">
             </div>
 
         </div>
@@ -134,25 +117,5 @@
     </div>
     <!-- 轮播图 end -->
 </body>
-
-
-<script>
-    var mySwiper = new Swiper('.swiper', {
-        loop: true, // 无限循环属性
-
-        // 分页器
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true
-        },
-
-        //自动切换
-        autoplay: {
-            delay: 3000,
-            stopOnLastSlide: false,
-            disableOnInteraction: true,
-        },
-    })
-</script>
 
 </html>

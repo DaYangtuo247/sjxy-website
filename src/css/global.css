@@ -40,7 +40,7 @@ img {
     height: 95.1375px;
 } */
 
-.top-div {
+.header {
     /* background-color: #a28b76; */
     /* background: url(../images/banner-shadow.png) 100%;
     background-size: ; */
@@ -106,7 +106,7 @@ img {
 }
 
 .nav-div ul li div:nth-child(2) {
-    width: 7em!important;
+    width: 7em !important;
 }
 
 .nav-div ul li:hover {
@@ -162,7 +162,7 @@ img {
 
 .nav-div ul li span a {
     display: block;
-    padding: 0.5em 0.7em!important;
+    padding: 0.5em 0.7em !important;
 }
 
 .nav-div ul li div span::after {
@@ -225,6 +225,7 @@ img {
         -webkit-transform: translate3d(0, 20px, 0);
         transform: translate3d(0, 20px, 0);
     }
+
     100% {
         opacity: 1;
         -webkit-transform: none;
@@ -239,10 +240,55 @@ img {
         -ms-transform: translate3d(0, 20px, 0);
         transform: translate3d(0, 20px, 0);
     }
+
     100% {
         opacity: 1;
         -webkit-transform: none;
         -ms-transform: none;
         transform: none;
     }
+}
+
+.header .search {
+    float: right;
+    text-align: center;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+
+.header .search input {
+    border: 0px;
+    border-radius: 15px;
+    background-color: transparent;
+}
+
+.header .search input[type="text"] {
+    box-sizing: border-box;
+    border: 1px solid #acacac;
+    border-radius: 10px;
+    height: 30px;
+    width: 0px;
+    opacity: 0;
+    vertical-align: middle;
+    padding-left: 20px;
+    margin-right: 10px;
+    transition: all 0.4s ease;
+}
+
+.header .search input[type="text"]::placeholder {
+    font: 14px '微软雅黑';
+}
+
+.header .search input[type="button"] {
+    font-size: 26px;
+    line-height: 36px;
+    cursor: pointer;
+}
+
+.header .search input[type="text"]:focus {
+    outline: none;
 }

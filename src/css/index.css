@@ -1,14 +1,16 @@
-/* 字体声明 */
 @font-face {
-    font-family: 'icomoon';
-    src: url('fonts/icomoon.eot?1vvj64');
-    src: url('fonts/icomoon.eot?1vvj64#iefix') format('embedded-opentype'),
-        url('fonts/icomoon.ttf?1vvj64') format('truetype'),
-        url('fonts/icomoon.woff?1vvj64') format('woff'),
-        url('fonts/icomoon.svg?1vvj64#icomoon') format('svg');
-    font-weight: normal;
+    font-family: 'iconfont';
+    src: url('./font/iconfont.woff2?t=1679410168130') format('woff2'),
+        url('./font/iconfont.woff?t=1679410168130') format('woff'),
+        url('./font/iconfont.ttf?t=1679410168130') format('truetype');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
     font-style: normal;
-    font-display: block;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 * {
