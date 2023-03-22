@@ -210,22 +210,12 @@ img {
     word-break: keep-all;
 }
 
-
-/* 搜索栏样式 */
-
-.search {
-    position: absolute;
-    right: 0;
-    top: -2em;
-}
-
 @-webkit-keyframes fadeInUpnav {
     0% {
         opacity: 0;
         -webkit-transform: translate3d(0, 20px, 0);
         transform: translate3d(0, 20px, 0);
     }
-
     100% {
         opacity: 1;
         -webkit-transform: none;
@@ -240,7 +230,6 @@ img {
         -ms-transform: translate3d(0, 20px, 0);
         transform: translate3d(0, 20px, 0);
     }
-
     100% {
         opacity: 1;
         -webkit-transform: none;
@@ -249,16 +238,28 @@ img {
     }
 }
 
+
+/* 搜索栏样式 */
+
+.search {
+    position: absolute;
+    right: 0;
+    top: -2em;
+}
+
 .header .search {
-    float: right;
+    position: absolute;
+    height: 30px;
+    /* float: right; */
+    top: -2.35em;
+    right: 1em;
     text-align: center;
     background-color: white;
     border: 1px solid transparent;
     border-radius: 15px;
-    overflow: hidden;
+    /* overflow: hidden; */
     margin-right: 20px;
 }
-
 
 .header .search input {
     border: 0px;
@@ -270,12 +271,13 @@ img {
     box-sizing: border-box;
     border: 1px solid #acacac;
     border-radius: 10px;
-    height: 30px;
+    height: 19px;
     width: 0px;
     opacity: 0;
     vertical-align: middle;
     padding-left: 20px;
-    margin-right: 10px;
+    /* padding: 5px 10px; */
+    margin: 5px;
     transition: all 0.4s ease;
 }
 
@@ -284,11 +286,149 @@ img {
 }
 
 .header .search input[type="button"] {
-    font-size: 26px;
-    line-height: 36px;
+    font-size: 22px;
+    line-height: 22px;
     cursor: pointer;
+    float: right;
+    margin: 4px;
 }
 
 .header .search input[type="text"]:focus {
     outline: none;
+}
+
+.homePage {
+    position: absolute;
+    right: -20px;
+}
+
+
+/* 底部footer */
+
+.footer {
+    background-color: #095b9a;
+    background-image: url(../images/footer.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    padding: 42px 0 0;
+}
+
+.footer-top {
+    margin-bottom: 60px;
+    overflow: hidden;
+}
+
+
+/* 底部logo */
+
+.footer-logo {
+    float: left;
+    width: 25%;
+    margin-top: 45px;
+    margin-right: 2%;
+}
+
+.footer-logo img {
+    width: 100%;
+}
+
+
+/* 底部标题 */
+
+.footer-title {
+    font-size: 22px;
+    color: #dae7fb;
+    margin: 0 0 20px;
+}
+
+.footer-title span {
+    font-size: 16px;
+}
+
+
+/* 快捷通道 */
+
+.footer-passage {
+    width: 52%;
+    float: left;
+}
+
+.footer-passage ul li {
+    float: left;
+    width: 98px;
+    text-align: center;
+    margin-right: 28px;
+    padding: 14px 0;
+}
+
+.footer-passage ul li.on1 {
+    background-color: rgba(0, 214, 255, 0.21);
+}
+
+.footer-passage ul li.on1:hover {
+    background-color: rgba(0, 214, 255, 0.31);
+}
+
+.footer-passage ul li.on2 {
+    background-color: rgba(0, 129, 255, 0.21);
+}
+
+.footer-passage ul li.on2:hover {
+    background-color: rgba(0, 129, 255, 0.31);
+}
+
+.footer-passage ul li .passage-img {
+    width: 45px;
+    height: 47px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.footer-passage ul li .passage-img img {
+    width: 100%;
+}
+
+.footer-passage ul li p {
+    font-size: 16px;
+    color: #dae7fb;
+    margin: 8px 0 0;
+}
+
+
+/* 联系我们 */
+
+.footer-us {
+    width: 20%;
+    float: left;
+}
+
+.footer-us p {
+    font-size: 14px;
+    color: #dae7fb;
+    line-height: 28px;
+}
+
+.copy {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #417fba;
+}
+
+.copy p {
+    font-size: 14px;
+    line-height: 28px;
+    color: #dae7fb;
+    opacity: 0.5;
+}
+
+
+/* 字体图标 */
+
+.passage-img {
+    font-family: "iconfont" !important;
+    font-size: 45px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }

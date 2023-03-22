@@ -1,4 +1,4 @@
-$(function () {
+$(function() {
     new Swiper('.swiper', {
         loop: true, // 无限循环属性
         // 分页器
@@ -15,17 +15,17 @@ $(function () {
         },
     })
 })
+
 function showSearch() {
-    let searchBut = document.getElementById('searchBut'),
-        searchText = document.getElementById('searchText');
+    searchText = document.getElementById('searchText');
     if (searchText.style.opacity == 0) {
         searchText.style.opacity = 1;
-        searchText.style.width = '240px';
+        searchText.style.width = '200px';
     } else {
         searchText.style.opacity = 0;
         searchText.style.width = '0px';
     }
-    $("#searchBut").click(function () {
+    $("#searchBut").click(function() {
         $("#searchForm").submit();
     });
 }

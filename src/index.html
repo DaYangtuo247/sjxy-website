@@ -12,8 +12,7 @@
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
-        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="./js/index.js"></script>
 </head>
 
@@ -36,6 +35,13 @@
                                 <a href="#">学院行政办公室</a>
                                 <a href="#">学生工作办公室</a>
                                 <a href="#">学院系部办公室</a>
+                            </span>
+                            <span>
+                                <a href="#">党委书记</a>
+                                <a href="#">院长</a>
+                                <a href="#">党委副书记</a>
+                                <a href="#">副院长</a>
+                                <a href="#">院长助理</a>
                             </span>
                         </div>
                     </li>
@@ -71,9 +77,10 @@
                     <li>
                         <a href="#">党建工作</a>
                         <div>
+                            <a href="#">支部设置</a>
                             <a href="#">党务通知</a>
                             <a href="#">党建动态</a>
-                            <a href="#">上级文件</a>
+                            <a href="#">上级文件/规章制度</a>
                         </div>
                     </li>
                     <li>
@@ -95,8 +102,9 @@
                 </ul>
             </div>
             <div class="search">
-                <input type="text" placeholder="输入需要查找的内容" id="searchText"><input type="button" value="&#xe8b9;"
-                    class="iconfont" id="searchBut" onclick="showSearch()">
+                <input type="text" placeholder="输入需要查找的内容" id="searchText">
+                <input type="button" value="&#xe752; " class="iconfont" id="searchBut" onclick="showSearch()">
+                <span><a href="#" class="homePage">首页</a></span>
             </div>
 
         </div>
@@ -116,6 +124,81 @@
         </div>
     </div>
     <!-- 轮播图 end -->
+
+    <!-- 底部footer start -->
+    <div class="footer">
+        <div class="container clearfix">
+            <div class="footer-top">
+                <!-- 底部logo -->
+                <div class="footer-logo">
+                    <a href="">
+                        <!-- 网站logo图片地址请在本组件"内容配置-网站logo"处填写 -->
+                        <a href="index.htm"><img src="img/web-logo.png"></a>
+                    </a>
+                </div>
+                <!-- 友情链接 -->
+                <div class="footer-passage">
+                    <h3 class="footer-title">快速通道<span> / Expressway</span></h3>
+                    <ul>
+                        <li class="on1">
+                            <a href="https://cas.whu.edu.cn/authserver/login?service=https%3A%2F%2Fhall.whu.edu.cn%2Finfoplus%2Flogin%3FretUrl%3Dhttps%253A%252F%252Fhall.whu.edu.cn%252Finfoplus%252Foauth2%252Fauthorize%253Fx_redirected%253Dtrue%2526scope%253Dprofile%252Bprofile_edit%252Bapp%"
+                                onclick="_addDynClicks(&#34;wbimage&#34;, 1852176512, 64865)">
+                                <div class="passage-img">&#xe621;</div>
+                                <p>办公系统</p>
+                            </a>
+                        </li>
+                        <li class="on2">
+                            <a href="" onclick="_addDynClicks(&#34;wbimage&#34;, 1852176512, 64864)">
+                                <div class="passage-img">&#xe643;</div>
+                                <p>教务系统</p>
+                            </a>
+                        </li>
+                        <li class="on1">
+                            <a href="" onclick="_addDynClicks(&#34;wbimage&#34;, 1852176512, 64863)">
+                                <div class="passage-img">&#xe630;</div>
+                                <p>图书查询</p>
+                            </a>
+                        </li>
+                        <li class="on2">
+                            <a href="" onclick="_addDynClicks(&#34;wbimage&#34;, 1852176512, 64862)">
+                                <div class="passage-img">&#xe63c;</div>
+                                <p>学工查询</p>
+                            </a>
+                        </li>
+                        <li class="on1">
+                            <a href="" onclick="_addDynClicks(&#34;wbimage&#34;, 1852176512, 64861)">
+                                <div class="passage-img">&#xe626;</div>
+                                <p>党务查询</p>
+                            </a>
+                        </li>
+                        <li class="on2">
+                            <a href="" onclick="_addDynClicks(&#34;wbimage&#34;, 1852176512, 64861)">
+                                <img src="./img/weixinQR.jpg" alt="" style="width: 100%;">
+                                <p>公众号</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 联系我们 -->
+                <div class="footer-us">
+                    <h3 class="footer-title">联系我们<span> / Contact us</span></h3>
+                    <script language="javascript" src="/system/resource/js/news/mp4video.js"></script>
+                    <p>武汉轻工大学数学与计算机学院</p>
+                    <p>地址：湖北省武汉市东西湖区环湖中路36号</p>
+                    <p>学院电话：027-85504742　学工办：027-85504733</p>
+                    <p>邮编：430048</p>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            <p>
+                <!-- 版权内容请在本组件"内容配置-版权"处填写 -->
+                <p>Copyright © 2023 武汉轻工大学 数学与计算机学院版权所有</p>
+            </p>
+        </div>
+    </div>
+    <!-- 底部footer end -->
 </body>
 
 </html>
