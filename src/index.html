@@ -12,103 +12,161 @@
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="./js/index.js"></script>
 </head>
 
 <body>
     <!-- 导航栏 start -->
-    <div class="header">
-        <a href="http://www.whpu.edu.cn/">
-            <img class="logo" src="img/web-logo.png" />
-        </a>
-        <div class="nav-container">
-            <div class="nav-div">
-                <ul>
-                    <li>
-                        <a href="xygk/xyjj.htm">学院概况</a>
-                        <div>
-                            <a href="xygk/xyjj.htm">学院简介</a>
-                            <a href="xygk/xrld.htm">现任领导</a>
-                            <a href="xygk/jgsz.htm">机构设置</a>
-                            <span>
-                                <a href="#">学院行政办公室</a>
-                                <a href="#">学生工作办公室</a>
-                                <a href="#">学院系部办公室</a>
-                            </span>
-                            <span>
-                                <a href="#">党委书记</a>
-                                <a href="#">院长</a>
-                                <a href="#">党委副书记</a>
-                                <a href="#">副院长</a>
-                                <a href="#">院长助理</a>
-                            </span>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="szdw/zrjs.htm">师资队伍</a>
-                        <div>
-                            <a href="szdw/zrjs.htm">信息与计算系</a>
-                            <a href="szdw/ssds.htm">B系</a>
-                            <a href="szdw/gcrc.htm">C系</a>
-                            <a href="#">公共教学系</a>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#">学科建设</a>
-                        <div>
-                            <a href="#">重点学科</a>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="bksjy/pyfa.htm">本科生教育</a>
-                        <div>
-                            <a href="bksjy/pyfa.htm">培养方案</a>
-                            <a href="bksjy/zyjs.htm">专业介绍</a>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="yjsjy/pyfa.htm">研究生教育</a>
-                        <div>
-                            <a href="yjsjy/pyfa.htm">培养方案</a>
-                            <a href="yjsjy/zyjs.htm">专业介绍</a>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#">党建工作</a>
-                        <div>
-                            <a href="#">支部设置</a>
-                            <a href="#">党务通知</a>
-                            <a href="#">党建动态</a>
-                            <a href="#">上级文件/规章制度</a>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#">校友之窗</a>
-                        <div>
-                            <a href="#">校友名册</a>
-                            <a href="#">校友活动</a>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#">实习基地</a>
-                        <div>
-                            <a href="#">校外</a>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="syzx/syzx.htm">实验中心</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="search">
-                <input type="text" placeholder="输入需要查找的内容" id="searchText">
-                <input type="button" value="&#xe752; " class="iconfont" id="searchBut" onclick="showSearch()">
-                <span><a href="#" class="homePage">首页</a></span>
-            </div>
+    <section class="header_box">
+        <section class="header">
+            <div class="w1200">
+                <div class="logo">
+                    <a href="#"><img src="./img/web-logo.png" /></a>
+                </div>
+                <div class="right">
+                    <div class="right_on">
+                        <ul class="right_on_list">
+                            <li>
+                                <a href="#">在校生</a>
+                            </li>
+                            <li class="search">
+                                <input type="text" placeholder="输入需要查找的内容" id="searchText">
+                                <input type="button" value="&#xe752;" class="iconfont" id="searchBut" onclick="showSearch()">
+                                <span><a href="#" class="homePage">首页</a></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right_under">
+                        <nav id="nav">
+                            <ul>
+                                <li class="on">
+                                    <a href="#">
+                                        <h3>学校首页</h3>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <h3>数据师院</h3>
+                                    </a>
+                                    <div class="sub_nav">
+                                        <div class="box">
+                                            <div class="li">
+                                                <a href="#">学校简介</a>
+                                            </div>
+                                            <div class="li">
+                                                <a href="#">历任领导</a>
+                                                <div class="sub_nav box-child">
+                                                    <div class="box">
+                                                        <div class="li"><a href="#">吴奇灵</a></div>
+                                                        <div class="li"><a href="#">吴奇灵</a></div>
+                                                        <div class="li"><a href="#">吴奇灵</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="li">
+                                                <a href="#">现任领导</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <h3>组织机构</h3>
+                                    </a>
 
-        </div>
-    </div>
+                                    <div class="sub_nav">
+                                        <div class="box">
+                                            <div class="li">
+                                                <a href="#">师资力量</a>
+                                            </div>
+                                            <div class="li">
+                                                <a href="#">管理机构</a>
+                                            </div>
+                                            <div class="li">
+                                                <a href="#">学科建设</a>
+                                            </div>
+                                            <div class="li">
+                                                <a href="#">学位授权</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <h3>学校服务</h3>
+                                    </a>
+
+                                    <div class="sub_nav">
+                                        <div class="box">
+                                            <div class="li">
+                                                <a href="#">后勤服务</a>
+                                            </div>
+                                            <div class="li">
+                                                <a href="#">网络服务</a>
+                                            </div>
+                                            <div class="li">
+                                                <a href="#">人事评聘</a>
+                                            </div>
+                                            <div class="li">
+                                                <a href="#">助学服务</a>
+                                            </div>
+                                            <div class="li">
+                                                <a href="#">校友网</a>
+                                            </div>
+                                            <div class="li">
+                                                <a href="#">心理健康</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <h3>信息公开</h3>
+                                    </a>
+                                    <div class="sub_nav">
+                                        <div class="box">
+                                            <div class="li">
+                                                <a href="#">招生网</a>
+                                            </div>
+                                            <div class="li">
+                                                <a href="#">就业网</a>
+                                            </div>
+                                            <div class="li">
+                                                <a href="#">规章制度</a>
+                                            </div>
+                                            <div class="li">
+                                                <a href="#">工作计划</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <h3>新闻中心</h3>
+                                    </a>
+                                    <div class="sub_nav">
+                                        <div class="box">
+                                            <div class="li">
+                                                <a href="#">师院要闻</a>
+                                            </div>
+                                            <div class="li">
+                                                <a href="#">通知公告</a>
+                                            </div>
+                                            <div class="li">
+                                                <a href="#">学术师院</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
     <!-- 导航栏 end -->
     <!-- 轮播图 start -->
     <div class="banner">
@@ -141,38 +199,37 @@
                     <h3 class="footer-title">快速通道<span> / Expressway</span></h3>
                     <ul>
                         <li class="on1">
-                            <a href="https://cas.whu.edu.cn/authserver/login?service=https%3A%2F%2Fhall.whu.edu.cn%2Finfoplus%2Flogin%3FretUrl%3Dhttps%253A%252F%252Fhall.whu.edu.cn%252Finfoplus%252Foauth2%252Fauthorize%253Fx_redirected%253Dtrue%2526scope%253Dprofile%252Bprofile_edit%252Bapp%"
-                                onclick="_addDynClicks(&#34;wbimage&#34;, 1852176512, 64865)">
+                            <a href="#">
                                 <div class="passage-img">&#xe621;</div>
                                 <p>办公系统</p>
                             </a>
                         </li>
                         <li class="on2">
-                            <a href="" onclick="_addDynClicks(&#34;wbimage&#34;, 1852176512, 64864)">
+                            <a href="">
                                 <div class="passage-img">&#xe643;</div>
                                 <p>教务系统</p>
                             </a>
                         </li>
                         <li class="on1">
-                            <a href="" onclick="_addDynClicks(&#34;wbimage&#34;, 1852176512, 64863)">
+                            <a href="">
                                 <div class="passage-img">&#xe630;</div>
                                 <p>图书查询</p>
                             </a>
                         </li>
                         <li class="on2">
-                            <a href="" onclick="_addDynClicks(&#34;wbimage&#34;, 1852176512, 64862)">
+                            <a href="">
                                 <div class="passage-img">&#xe63c;</div>
                                 <p>学工查询</p>
                             </a>
                         </li>
                         <li class="on1">
-                            <a href="" onclick="_addDynClicks(&#34;wbimage&#34;, 1852176512, 64861)">
+                            <a href="">
                                 <div class="passage-img">&#xe626;</div>
                                 <p>党务查询</p>
                             </a>
                         </li>
                         <li class="on2">
-                            <a href="" onclick="_addDynClicks(&#34;wbimage&#34;, 1852176512, 64861)">
+                            <a href="">
                                 <img src="./img/weixinQR.jpg" alt="" style="width: 100%;">
                                 <p>公众号</p>
                             </a>
@@ -194,7 +251,7 @@
         <div class="copy">
             <p>
                 <!-- 版权内容请在本组件"内容配置-版权"处填写 -->
-                <p>Copyright © 2023 武汉轻工大学 数学与计算机学院版权所有</p>
+            <p>Copyright © 2023 武汉轻工大学 数学与计算机学院版权所有</p>
             </p>
         </div>
     </div>
