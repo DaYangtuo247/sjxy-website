@@ -1,11 +1,3 @@
-.swiper {
-	height: 100vh;
-}
-
-.banner .swiper img {
-	width: 100%;
-}
-
 .header {
 	position: fixed;
 	top: 0;
@@ -422,13 +414,15 @@
 	border-bottom: 14px solid transparent !important;
 	content: "";
 }
-
-#nav .sub_nav .box .li:first-child a:first-of-type {
-	border-radius: 0.5rem 0.5rem 0 0;
+#nav .sub_nav > .box > .li:first-child > a:first-of-type,
+#nav .sub_nav .box .box .li:first-child a:first-of-type {
+	border-top-left-radius: 0.5rem;
+	border-top-right-radius: 0.5rem;
 }
-
-#nav .sub_nav .box .li:last-child a:last-of-type {
-	border-radius: 0 0 0.5rem 0.5rem;
+#nav .sub_nav > .box > .li:last-child > a:last-of-type,
+#nav .sub_nav .box .box .li:last-child a:last-of-type {
+	border-bottom-left-radius: 0.5rem;
+	border-bottom-right-radius: 0.5rem;
 }
 
 #nav .sub_nav a:hover:before {
