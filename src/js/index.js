@@ -8,10 +8,15 @@ window.addEventListener("load", function () {
 		"rgb(140, 152, 187)",
 	]; //背景色
 	var mySwiper = new Swiper(".swiper-container", {
-		speed: 1300,
-		allowTouchMove: false, //禁止触摸滑动
+		speed: 200,
+		allowTouchMove: true, //禁止触摸滑动
 		parallax: true, //文字位移视差
 		autoplay: true, //是否自动播放轮播图
+		// 如果需要分页器
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true
+		},
 		on: {
 			transitionStart: function () {
 				lock = true; //锁住按钮
@@ -22,10 +27,10 @@ window.addEventListener("load", function () {
 				derection = this.activeIndex - this.previousIndex;
 				this.$el.css("background-color", bgColor[this.activeIndex]); //背景颜色动画
 
-				imgBox.transform("matrix(0.6, 0, 0, 0.6, 0, 0)");
+				imgBox.transform("matrix(1.0, 0, 0, 1.0, 0, 0)");
 				imgPrev
 					.transition(1000)
-					.transform("matrix(1.2, 0, 0, 1.2, 0, 0)"); //图片缩放视差
+					.transform("matrix(1.1, 0, 0, 1.1, 0, 0)"); //图片缩放视差
 				this.slides
 					.eq(this.previousIndex)
 					.find("h3")
@@ -42,8 +47,8 @@ window.addEventListener("load", function () {
 						.transition(1300)
 						.transform(
 							"translate3d(" +
-								60 * derection +
-								"%, 0, 0)  matrix(1.2, 0, 0, 1.2, 0, 0)"
+							60 * derection +
+							"%, 0, 0)  matrix(1.2, 0, 0, 1.2, 0, 0)"
 						);
 				});
 			},
