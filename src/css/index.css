@@ -246,6 +246,12 @@ svg {
 
 
 /* content部分 */
+.homec .intit,
+.homec .uani,
+.homec .fadeInUp{
+    visibility: hidden;
+    animation-name: none;
+}
 
 .inmor {
     display: flex;
@@ -288,6 +294,13 @@ svg {
     background: url(../images/abg.jpg) no-repeat center;
     background-size: cover;
     padding: .7rem 0 1rem
+}
+
+.homea .intit,
+.homea .uani,
+.homea .fadeInUp{
+    visibility: visible;
+    animation-name: fadeInUp;
 }
 
 .homea .intit a {
@@ -375,6 +388,13 @@ svg {
     min-height: 2rem;
     background: url(../images/bbg.jpg) no-repeat center;
     background-size: cover
+}
+
+.homeab .intit,
+.homeb .uani,
+.homeb .fadeInUp{
+    visibility: visible;
+    animation-name: fadeInUp;
 }
 
 .homeb .intit h4 {
