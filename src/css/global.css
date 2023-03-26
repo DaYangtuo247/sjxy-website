@@ -77,6 +77,9 @@
 }
 
 .footer-top {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	overflow: hidden;
 	margin-bottom: 60px;
 }
@@ -84,12 +87,11 @@
 .footer-logo {
 	float: left;
 	margin-top: 45px;
-	margin-left: 2%;
-	width: 25%;
 }
 
 .footer-logo img {
-	width: 100%;
+	width: 480px;
+	height: auto;
 }
 
 .footer-title {
@@ -104,8 +106,8 @@
 
 .footer-passage {
 	float: left;
-	width: 960px;
-	padding-left: 72px;
+    padding: 0px 80px;
+    padding-left: 45px;
 }
 
 .footer-passage ul li {
@@ -130,6 +132,7 @@
 
 .footer-passage ul li.on2:last-of-type {
 	padding: 0;
+    margin-right: 0;
 }
 
 .footer-passage ul li.on2:hover {
@@ -152,7 +155,6 @@
 
 .footer-us {
 	float: left;
-	width: 20%;
 }
 
 .footer-us p {
@@ -223,7 +225,8 @@
 
 .header .logo {
 	padding: 0;
-	width: 32%;
+	width: 685px;
+    margin-left: -8rem;
 }
 
 .header .logo a {
@@ -232,7 +235,6 @@
 }
 
 .header .logo img {
-	margin-left: -8.5rem;
 	width: auto;
 	height: 7rem;
 	transition: 0.5s;
