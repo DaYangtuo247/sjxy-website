@@ -59,7 +59,6 @@ body {
     margin-right: 2px;
     position: relative;
     height: 26px;
-    transform: translateY(-3px);
     transition: all 0.3s;
 }
 
