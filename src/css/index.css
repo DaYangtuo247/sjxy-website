@@ -249,7 +249,6 @@ svg {
 .homec .intit,
 .homec .uani,
 .homec .fadeInUp{
-    visibility: hidden;
     animation-name: none;
 }
 
