@@ -166,13 +166,23 @@ body {
     line-height: 28px;
 }
 
-.copy {
+.Copyright {
     padding: 10px 0;
     border-top: 1px solid #417fba;
     text-align: center;
 }
 
-.copy p {
+.Copyright a{
+    color: inherit;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s;
+}
+
+.Copyright a:hover{
+    border-bottom: 1px solid #9cc1e5;
+}
+
+.Copyright p {
     color: #dae7fb;
     font-size: 14px;
     line-height: 28px;
