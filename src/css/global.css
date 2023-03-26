@@ -225,7 +225,8 @@
 
 .header .logo {
 	padding: 0;
-	width: 32%;
+	width: 685px;
+    margin-left: -8rem;
 }
 
 .header .logo a {
@@ -234,7 +235,6 @@
 }
 
 .header .logo img {
-	margin-left: -8rem;
 	width: auto;
 	height: 7rem;
 	transition: 0.5s;
