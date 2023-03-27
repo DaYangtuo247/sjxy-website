@@ -246,11 +246,6 @@ svg {
 
 
 /* content部分 */
-.homec .intit,
-.homec .uani,
-.homec .fadeInUp{
-    animation-name: none;
-}
 
 .inmor {
     display: flex;
@@ -293,13 +288,6 @@ svg {
     background: url(../images/abg.jpg) no-repeat center;
     background-size: cover;
     padding: .7rem 0 1rem
-}
-
-.homea .intit,
-.homea .uani,
-.homea .fadeInUp{
-    visibility: visible;
-    animation-name: fadeInUp;
 }
 
 .homea .intit a {
@@ -387,13 +375,6 @@ svg {
     min-height: 2rem;
     background: url(../images/bbg.jpg) no-repeat center;
     background-size: cover
-}
-
-.homeab .intit,
-.homeb .uani,
-.homeb .fadeInUp{
-    visibility: visible;
-    animation-name: fadeInUp;
 }
 
 .homeb .intit h4 {
@@ -490,9 +471,21 @@ svg {
     background-size: cover
 }
 
+.fadeInUpa,
+.fadeInUpb,
+.fadeInUpc,
+.fadeInUpRighta,
+.fadeInUpLefta,
+.fadeInUpbb,
+.fadeInUpbbb {
+    opacity: 0;
+}
+
 .homec-c ul li {
     width: 31.3333%;
-    background: #fff
+    background-color: rgb(255, 255, 255, 0.9);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
 }
 
 .homec-c ul li a {
@@ -736,7 +729,7 @@ svg:not(:root) {
 .wp {
     margin: 0 auto;
     max-width: 14.4rem;
-    width: 94%
+    width: 100%;
 }
 
 .aline_w {
@@ -1037,4 +1030,20 @@ svg:not(:root) {
     background: url(images/bamask.png) no-repeat bottom center;
     background-size: 101% 101%;
     height: 30%;
+}
+
+
+/* 实现滚动淡入效果 */
+
+@keyframes float {
+    from {
+        position: relative;
+        margin-top: 200px;
+        opacity: 0;
+    }
+    to {
+        position: relative;
+        margin-top: 50px;
+        opacity: 1;
+    }
 }
