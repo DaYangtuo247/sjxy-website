@@ -117,3 +117,16 @@ $(document).ready(function () {
 		}
 	});
 });
+
+// 监听页面滚动修改header
+$(document).ready(function () {
+	$(window).scroll(function () {
+		var scroll = $(window).scrollTop();
+        var head_hight = $(".show").outerHeight();
+		if (scroll >= head_hight) {
+			$(".header").addClass("on");
+		} else {
+            $(".header").removeClass("on");
+		}
+	});
+});

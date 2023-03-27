@@ -66,14 +66,9 @@ body {
     outline: none;
 }
 
-.logo {
-    height: 6em;
-}
-
 .footer {
     padding: 42px 0 0;
     background-color: #095b9a;
-    background-image: url(../images/footer.jpg);
     background-position: bottom;
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -238,7 +233,6 @@ body {
 
 .header .logo {
     padding: 0;
-    width: 600px;
     margin-left: -0.64rem;
 }
 
@@ -248,9 +242,9 @@ body {
 }
 
 .header .logo img {
-    width: 100%;
-    height: 100%;
-    transition: 0.5s;
+    width: 600px;
+    height: auto;
+    transition: all 0.5s;
 }
 
 .header .right {
@@ -263,7 +257,6 @@ body {
 }
 
 .header .right .right_on {
-    padding: 0.32rem 0 0.24rem;
     color: #ccc;
     font-size: 12px;
 }
@@ -281,6 +274,23 @@ body {
 
 .header .show {
     max-width: 1600px;
+    backdrop-filter: blur(2px);
+}
+
+.header.on .right .right_on{
+    display: none !important;
+}
+
+.header.on {
+    height: 0.8rem !important;
+    background:none;
+    background-color: #095b9a;
+}
+
+.header.on .logo img {
+    width: auto;
+    height: 80px;
+    transition: all 0.5s;
 }
 
 #nav {
@@ -312,11 +322,11 @@ body {
     position: relative;
     z-index: 1;
     display: flex;
-    padding-bottom: 0.24rem;
     width: 100%;
     color: #fff;
     text-align: center;
     font-size: 0.18rem;
+    padding: 0.24rem 0;
     font-family: SourceHanSerifCN-Bold;
     transition: 0.36s;
     align-items: center;
