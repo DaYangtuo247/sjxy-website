@@ -120,6 +120,13 @@ $(document).ready(function() {
 
 //元素淡入淡出效果
 $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    var head_hight = $(".show").outerHeight();
+    if (scroll >= head_hight) {
+        $(".header").addClass("on");
+    } else {
+        $(".header").removeClass("on");
+    }
     var scrollTop = $(this).scrollTop();
     var homeaTop = $('.homea').outerHeight();
     var homebTop = $('.homeb').outerHeight();
