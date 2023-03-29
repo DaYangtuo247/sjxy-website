@@ -140,7 +140,7 @@ $(window).scroll(function() {
             });
         });
     }
-    if (scrollTop > (homeaTop + homebTop + homecTop) / 1.2) {
+    if (scrollTop > (homeaTop + homebTop + homecTop) / 1.4) {
         $('.fadeInUpb').addClass('animate__animated animate__fadeInUp');
         $('.fadeInUpbb').each(function(i) {
             $(this).delay(i * 100).queue(function() {

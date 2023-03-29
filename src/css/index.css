@@ -1,13 +1,3 @@
-@font-face {
-    font-family: "iconfont";
-    src: url("font-icon/iconfont.ttf?t=1679474416216") format("truetype");
-}
-
-@font-face {
-    font-family: "nav-font";
-    src: url(font/SourceHanSerifCN-Bold.woff) format("truetype");
-}
-
 .iconfont {
     font-family: iconfont !important;
     font-size: 16px;
@@ -21,13 +11,6 @@
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-}
-
-body {
-    overflow-x: hidden;
-    font-size: 14px;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
 }
 
 body,
@@ -262,9 +245,9 @@ svg {
 }
 
 .intit h4 {
-    color: #004a98;
+    color: #fff;
     position: relative;
-    border-left: 2px solid #004a98;
+    border-left: 2px solid #fff;
     padding-left: .15rem;
     padding-top: .24rem
 }
@@ -285,9 +268,9 @@ svg {
 
 .homea {
     min-height: 2rem;
-    background: url(../images/abg.jpg) no-repeat center;
+    background: url(../img/bg2.png) no-repeat center;
     background-size: cover;
-    padding: .7rem 0 1rem
+    padding: .7rem 0 1rem;
 }
 
 .homea .intit a {
@@ -373,8 +356,12 @@ svg {
 
 .homeb {
     min-height: 2rem;
-    background: url(../images/bbg.jpg) no-repeat center;
-    background-size: cover
+    background: url(../img/bg3.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.homeb-b {
+    background-color: rgba(11, 85, 138, 0.6);
 }
 
 .homeb .intit h4 {
@@ -466,10 +453,18 @@ svg {
 }
 
 .homec {
-    padding: .8rem .5rem;
-    background: url(../images/cbg.jpg) no-repeat center;
-    background-size: cover
+    /* padding: .8rem .5rem; */
+    background: url(../img/bg1.png) no-repeat center;
+    background-size: cover;
 }
+
+
+/* 
+.backgroud-color {
+    overflow: hidden;
+    background-color: rgba(11, 85, 138, 0.6);
+    padding: 20px 0 40px 0;
+} */
 
 .fadeInUpa,
 .fadeInUpb,
@@ -481,11 +476,17 @@ svg {
     opacity: 0;
 }
 
+.homec-c {
+    overflow: hidden;
+    background-color: rgba(11, 85, 138, 0.6);
+    padding: 20px 0 40px 0;
+}
+
 .homec-c ul li {
     width: 31.3333%;
-    background-color: rgb(255, 255, 255, 0.9);
+    background-color: rgb(255, 255, 255, 0.3);
     box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(2px);
 }
 
 .homec-c ul li a {
@@ -500,6 +501,15 @@ svg {
     padding-top: 4px
 }
 
+
+/* 日期字体 */
+
+.time span,
+.time em,
+.din {
+    font-family: "Raleway", sans-serif!important;
+}
+
 .homec-c ul li .time time {
     display: block;
     width: .7rem;
@@ -507,7 +517,7 @@ svg {
     border: 1px solid #d20b17;
     background: #fff;
     text-align: center;
-    color: #d20b17
+    color: #d20b17;
 }
 
 .homec-c ul li .time time span {
@@ -527,7 +537,8 @@ svg {
 }
 
 .homec-c ul li .txt {
-    width: calc(100% - .9rem)
+    width: calc(100% - .9rem);
+    color: #fff;
 }
 
 .homec-c ul li .txt h4 {
@@ -570,19 +581,16 @@ html {
     -ms-text-size-adjust: 100%;
 }
 
-
-/*
-body{margin:0;position: relative;overflow-x:hidden;font-size: .16rem;
-   font-family:-apple-system,PingFang SC,BlinkMacSystemFont,Microsoft YaHei,Helvetica Neue,"Helvetica Neue", Arial, "Open Sans", "Hiragino Sans GB", sans-serif;color: #333}
-*/
-
 body {
     margin: 0;
     position: relative;
     overflow-x: hidden;
     font-size: .16rem!important;
     font-family: 微软雅黑!important;
-    color: #333
+    color: #333;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    background-color: #095b9a45;
 }
 
 h4 {
@@ -633,10 +641,6 @@ svg:not(:root) {
 
 :focus {
     outline: 0
-}
-
-.none {
-    display: none
 }
 
 .check:not(:checked) {
@@ -741,11 +745,8 @@ svg:not(:root) {
     transition: background-size .5s;
     overflow: hidden;
     text-overflow: ellipsis;
-    /* 弹性伸缩盒子模型显示*/
     display: -webkit-box;
-    /*限制在一个块元素显示的文本的行数*/
     -webkit-line-clamp: 2;
-    /*设置或检索伸缩盒对象的子元素的排列方式*/
     -webkit-box-orient: vertical;
 }
 
@@ -764,7 +765,7 @@ svg:not(:root) {
     background-position: 0 100%;
     background-size: 0 1px;
     background-repeat: no-repeat;
-    transition: background-size .5s
+    transition: background-size .5s;
 }
 
 .alin_r:hover .aline_r {
@@ -831,8 +832,9 @@ svg:not(:root) {
 
 .homea .aright ul li:hover:after {
     opacity: 1;
-    ;
     visibility: visible;
+    backdrop-filter: blur(4px);
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 .homea .aright ul li:hover {
@@ -865,7 +867,9 @@ svg:not(:root) {
     box-shadow: 3px 35px 77px -8px rgb(0 0 0 / 90%);
     opacity: 0;
     visibility: hidden;
-    transition: .3s
+    transition: .3s;
+    backdrop-filter: blur(4px);
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 .homeb .item:hover:after {
@@ -914,10 +918,16 @@ svg:not(:root) {
     transition: .3s
 }
 
+.homeb ul li:hover,
+.homeb ul li:hover~li {
+    border-top: 0!important;
+}
+
 .homeb ul li:hover:after {
     opacity: 1;
-    ;
     visibility: visible;
+    /* backdrop-filter: blur(4px); */
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 .homeb ul li:hover {
@@ -932,22 +942,6 @@ svg:not(:root) {
 
 .homeb ul li:hover time {
     color: #d20b17;
-}
-
-@charset "utf-8";
-.homec {
-    background: url(../images/1028/cbg.jpg) no-repeat center;
-    background-size: cover;
-}
-
-.homeb {
-    background: url(../images/1028/bbg.png) no-repeat center;
-    background-size: cover;
-}
-
-.homea {
-    background: url(../images/1028/abg.jpg) no-repeat center;
-    background-size: cover;
 }
 
 .homea .aright ul li .txt {
@@ -1027,23 +1021,5 @@ svg:not(:root) {
     right: 0;
     bottom: 0;
     z-index: 2;
-    background: url(images/bamask.png) no-repeat bottom center;
-    background-size: 101% 101%;
     height: 30%;
-}
-
-
-/* 实现滚动淡入效果 */
-
-@keyframes float {
-    from {
-        position: relative;
-        margin-top: 200px;
-        opacity: 0;
-    }
-    to {
-        position: relative;
-        margin-top: 50px;
-        opacity: 1;
-    }
 }

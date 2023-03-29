@@ -1,5 +1,11 @@
-body {
-    background-color: skyblue;
+@font-face {
+    font-family: "iconfont";
+    src: url("font-icon/iconfont.ttf?t=1679474416216") format("truetype");
+}
+
+@font-face {
+    font-family: "nav-font";
+    src: url(font/SourceHanSerifCN-Bold.woff) format("truetype");
 }
 
 .header {
@@ -167,13 +173,13 @@ body {
     text-align: center;
 }
 
-.Copyright a{
+.Copyright a {
     color: inherit;
     border-bottom: 1px solid transparent;
     transition: all 0.3s;
 }
 
-.Copyright a:hover{
+.Copyright a:hover {
     border-bottom: 1px solid #9cc1e5;
 }
 
@@ -277,13 +283,13 @@ body {
     backdrop-filter: blur(2px);
 }
 
-.header.on .right .right_on{
+.header.on .right .right_on {
     display: none !important;
 }
 
 .header.on {
     height: 0.8rem !important;
-    background:none;
+    background: none;
     background-color: #095b9a;
 }
 
