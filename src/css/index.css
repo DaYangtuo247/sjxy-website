@@ -124,7 +124,7 @@ ul li {
 	border-radius: 2px;
 	opacity: 1;
 	background-color: white;
-    box-shadow: 0px 0px 10px #00000049;
+	box-shadow: 0px 0px 10px #00000049;
 	overflow: hidden;
 	position: relative;
 }
@@ -471,6 +471,7 @@ svg {
 	background-color: rgb(255, 255, 255, 0.3);
 	box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
 	backdrop-filter: blur(2px);
+    margin-bottom: 30px;
 }
 
 .homec-c ul li a {
@@ -1004,4 +1005,11 @@ svg:not(:root) {
 	bottom: 0;
 	z-index: 2;
 	height: 30%;
+}
+
+.new {
+	width: 50px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
 }
