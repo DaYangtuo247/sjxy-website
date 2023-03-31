@@ -117,3 +117,38 @@ $(window).scroll(function () {
 		});
 	}
 });
+
+// 通知公告添加new标签
+$(document).ready(function () {
+	var inform = $(".flex .fadeInUpc").toArray();
+	$.getJSON(
+		"https://worldtimeapi.org/api/timezone/Asia/Shanghai", // 世界时间api接口
+		function (data) {
+			var datetime = data.datetime;
+			var ChinaDate = new Date(String(datetime.slice(0, 10))); // 提取年月日
+			console.log("ChinaDate:", ChinaDate);
+			for (var i = 0; i < inform.length; i++) {
+				var timeTag = $(inform[i]).find(".time");
+				var nowdate =
+					timeTag.find("em").text() +
+					"-" +
+					timeTag.find("span").text();
+				nowdate = new Date(String(nowdate));
+				console.log("nowdate:", nowdate);
+
+				var diffInDays = Math.round(
+					(ChinaDate - nowdate) / (1000 * 60 * 60 * 24)
+				);
+				console.log("diffInDays:", diffInDays);
+
+				if (diffInDays >= 0 && diffInDays <= 3) {
+					$(inform[i])
+						.find("a")
+						.append(
+							"<div class='new'><img src='./img/New.png'></div>"
+						);
+				}
+			}
+		}
+	);
+});

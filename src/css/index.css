@@ -124,7 +124,7 @@ ul li {
 	border-radius: 2px;
 	opacity: 1;
 	background-color: white;
-    box-shadow: 0px 0px 10px #00000049;
+	box-shadow: 0px 0px 10px #00000049;
 	overflow: hidden;
 	position: relative;
 }
@@ -251,10 +251,15 @@ svg {
 	left: 0.16rem;
 }
 
+.noticeAndNewBg{
+	background: url(../img/bg2.png) !important;
+}
+
 .homea {
 	min-height: 2rem;
 	background: url(../img/bg2.png) no-repeat center;
 	background-size: cover;
+	background-color: rgba(255, 255, 255, 0.9);
 	padding: 0.7rem 0 1rem;
 }
 
@@ -346,7 +351,7 @@ svg {
 }
 
 .homeb-b {
-	background-color: rgba(11, 85, 138, 0.8);
+	background-color: rgba(11, 85, 138, 0.85);
 }
 
 .homeb .intit h4 {
@@ -439,7 +444,8 @@ svg {
 
 .homec {
 	/* padding: .8rem .5rem; */
-	background: url(../img/bg2.png) no-repeat center;
+	/* background: url(../img/bg2.png) no-repeat center; */
+	background-color: #eeebeb;
 	background-size: cover;
 }
 
@@ -474,6 +480,7 @@ svg {
 	background-color: rgb(255, 255, 255, 0.3);
 	box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
 	backdrop-filter: blur(2px);
+    margin-bottom: 30px;
 }
 
 .homec-c ul li a {
@@ -524,7 +531,7 @@ svg {
 
 .homec-c ul li .txt {
 	width: calc(100% - 0.9rem);
-	color: #fff;
+	color: black;
 }
 
 .homec-c ul li .txt h4 {
@@ -856,7 +863,7 @@ svg:not(:root) {
 	visibility: hidden;
 	transition: 0.3s;
 	backdrop-filter: blur(4px);
-	background-color: rgba(255, 255, 255, 0.7);
+	background-color: rgba(255, 255, 255, 0.9);
 }
 
 .homeb .item:hover:after {
@@ -913,7 +920,7 @@ svg:not(:root) {
 	opacity: 1;
 	visibility: visible;
 	/* backdrop-filter: blur(4px); */
-	background-color: rgba(255, 255, 255, 0.7);
+	background-color: rgba(255, 255, 255, 0.9);
 }
 
 .homeb ul li:hover {
@@ -1008,4 +1015,11 @@ svg:not(:root) {
 	bottom: 0;
 	z-index: 2;
 	height: 30%;
+}
+
+.new {
+	width: 50px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
 }
