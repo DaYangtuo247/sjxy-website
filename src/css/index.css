@@ -267,46 +267,6 @@ svg {
     padding: 0.7rem 0 1rem;
 }
 
-.hoema .flex {
-    align-items: normal!important;
-}
-
-.news {
-    height: 120px!important;
-}
-
-.news .news-date {
-    width: 0.6rem;
-    margin-right: 0.15rem;
-    height: 0.27rem;
-    border: 1px solid #ccc;
-    color: #919191;
-    text-align: center;
-    font-size: 0.14rem;
-    float: left;
-    line-height: 0.27rem;
-    margin-top: 0.1rem;
-    font-family: "Raleway", sans-serif !important;
-}
-
-.news h2 {
-    display: inline-block;
-    width: 90%;
-    margin: auto;
-    color: #333333;
-    line-height: 0.35rem;
-    margin-top: 0.05rem;
-    font-size: 0.2rem;
-    text-align: justify;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-.news .news-contain {
-    margin-top: 0.2rem;
-}
-
 .homea .intit a {
     display: block;
     width: 1.55rem;
@@ -355,13 +315,53 @@ svg {
     position: relative;
 }
 
-.homea .news-swiper {
-    height: 500px!important;
+.homea .swiper-slide {
+    display: flex!important;
+    flex-direction: column!important;
+    background-color: transparent!important;
 }
 
 .homea .aleft img {
-    /* height: 500px!important; */
+    height: 500px!important;
     object-fit: fill!important;
+}
+
+.news {
+    width: 100%;
+    height: 120px!important;
+}
+
+.news .news-date {
+    width: 0.6rem;
+    margin-right: 0.15rem;
+    height: 0.27rem;
+    border: 1px solid #ccc;
+    color: #919191;
+    text-align: center;
+    font-size: 0.14rem;
+    float: left;
+    line-height: 0.27rem;
+    margin-top: 0.1rem;
+    font-family: "Raleway", sans-serif !important;
+}
+
+.news h2 {
+    display: inline-block;
+    width: 90%;
+    margin: auto;
+    color: #333333;
+    line-height: 0.35rem;
+    margin-top: 0.05rem;
+    font-size: 0.2rem;
+    text-align: justify;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.news .news-contain {
+    margin-top: 0.2rem;
+    text-align: start;
 }
 
 .homea .swiper-button-next,
