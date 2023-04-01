@@ -53,11 +53,15 @@ $(document).ready(function() {
     //小轮播图组件
     var swiper2 = new Swiper(".news-swiper", {
         loop: true,
-        speed: 400,
+        speed: 800,
         autoplay: true,
         navigation: {
             prevEl: ".swiper-button-prev",
             nextEl: ".swiper-button-next"
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
         },
     });
 });
