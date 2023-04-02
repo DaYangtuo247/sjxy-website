@@ -372,9 +372,10 @@ svg {
 }
 
 .news .news-contain {
-    line-height: 30px;
+    line-height: 26px;
     text-align: start;
     text-indent: 32px;
+    margin-top: 5px;
     font-size: 16px;
     padding: 0 22px;
 }
