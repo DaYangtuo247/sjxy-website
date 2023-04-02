@@ -867,6 +867,15 @@ svg:not(:root) {
     background-size: 100% 1px;
 }
 
+.homea .alin_r:hover .din {
+    background-size: 100% 1px;
+    color: #d20b17;
+}
+
+.homea .alin_r .din{
+    background-size: 100% 1px;
+}
+
 .l2 {
     overflow: hidden;
     text-overflow: ellipsis;
