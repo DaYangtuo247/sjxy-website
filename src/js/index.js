@@ -57,7 +57,8 @@ $(document).ready(function() {
         autoplay: true,
         navigation: {
             prevEl: ".swiper-button-prev",
-            nextEl: ".swiper-button-next"
+            nextEl: ".swiper-button-next",
+            hideOnClick: true,
         },
         pagination: {
             el: ".swiper-pagination",
