@@ -435,7 +435,8 @@ svg {
 .homeb .intit h4 em {
     position: static;
     display: block;
-    margin-left: 0.1rem;
+    /* margin-left: 0.1rem; */
+    margin-bottom: 5px;
 }
 
 .homeb .intit h4 span {
