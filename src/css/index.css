@@ -261,52 +261,25 @@ svg {
 
 .homea {
     min-height: 2rem;
-    /* background: url(../img/bg2.png) no-repeat center; */
     background-size: cover;
-    /* background-color: rgba(255, 255, 255, 0.9); */
     padding: 0.7rem 0 1rem;
 }
 
-.homea .intit a {
-    display: block;
-    width: 1.55rem;
-    height: 0.4rem;
-    position: absolute;
-    overflow: hidden;
-    right: 0;
-    top: 0.15rem;
-    line-height: 0.38rem;
-    color: #fff;
-    text-align: center;
+.homea.inmor {
+    display: flex;
+    align-items: center;
 }
 
-.homea .intit a i {
-    font-size: 0.18rem;
-    margin-left: 5px;
+.homea.inmor .inmor .more-icon {
+    width: 35px;
+    height: 35px;
 }
 
-.homea .intit a span {
-    position: relative;
-    z-index: 3;
-}
-
-.homea .intit a:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 0;
-    background: #d20b17;
-    transform-origin: right bottom;
-    transform: skewX(18deg);
-    transition: 0.5s;
-}
-
-.homea .intit a:hover:after {
-    transform: skewX(12deg);
-    background: #043b7a;
+.homea .inmor .line {
+    margin-right: 20px;
+    width: 480px;
+    height: 1px;
+    background-color: #043b7a;
 }
 
 .homea .aleft {
@@ -551,12 +524,12 @@ svg {
     align-items: center;
 }
 
-.homec-c .inmor .more-icon {
+ .inmor .more-icon {
     width: 35px;
     height: 35px;
 }
 
-.homec-c .inmor .line {
+ .inmor .line {
     margin-right: 20px;
     width: 500px;
     height: 1px;
@@ -640,7 +613,7 @@ svg {
 }
 
 .inmor:hover {
-    color: #fff;
+    /* color: #fff; */
     /* border-bottom: 1px solid #fff; */
 }
 
@@ -706,7 +679,7 @@ a:hover {
 }
 
 a:hover {
-    color: #d23626;
+    /* color: #d23626; */
 }
 
 img {
