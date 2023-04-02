@@ -54,13 +54,8 @@ $(document).ready(function () {
         loop: true,
         speed: 800,
         autoplay: true,
-        navigation: {
-            prevEl: ".swiper-button-prev",
-            nextEl: ".swiper-button-next",
-            hideOnClick: true,
-        },
         pagination: {
-            el: ".swiper-pagination",
+            el: ".min-swiper-pagination",
             clickable: true,
         },
     });
@@ -143,15 +138,12 @@ $(document).ready(function () {
         function (data) {
             var datetime = data.datetime;
             var ChinaDate = new Date(String(datetime.slice(0, 10))); // 提取年月日
-            console.log("ChinaDate:", ChinaDate);
             for (var i = 0; i < inform.length; i++) {
                 var timeTag = $(inform[i]).find(".time");
                 var nowdate = timeTag.find("em").text() + "-" + timeTag.find("span").text();
                 nowdate = new Date(String(nowdate));
-                console.log("nowdate:", nowdate);
 
                 var diffInDays = Math.round((ChinaDate - nowdate) / (1000 * 60 * 60 * 24));
-                console.log("diffInDays:", diffInDays);
 
                 if (diffInDays >= 0 && diffInDays <= 3) {
                     $(inform[i]).find("a").append("<div class='new'><img src='./img/New.png'></div>");
@@ -160,3 +152,12 @@ $(document).ready(function () {
         }
     );
 });
+
+var Builders = [
+    { 姓名: "吴奇灵", 角色: "全栈", 年级专业: "20级信计", 联系方式: "2473605320@gmail.com" },
+    { 姓名: "王仲旸", 角色: "前端", 年级专业: "20级信计", 联系方式: "3114729830@gmail.com" },
+    { 姓名: "程 静", 角色: "前端", 年级专业: "20级计科", 联系方式: "448319283@gmail.com" },
+    { 姓名: "黄志旺", 角色: "后端", 年级专业: "20级大数据", 联系方式: "2944535274@gmail.com" },
+];
+console.log("version: 0.1, 最后维护日期：2023-xx-xx");
+console.table(Builders);
