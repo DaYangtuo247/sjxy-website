@@ -333,7 +333,6 @@ svg {
 
 .homea .aleft img {
     height: 500px !important;
-    object-fit: fill !important;
 }
 
 .news {
@@ -408,6 +407,7 @@ svg {
 .homea .aright ul li .pic img {
     width: 435px;
     height: 250px;
+    object-fit: cover;
 }
 
 .homea .aright ul li .txt h4 {
@@ -484,6 +484,11 @@ svg {
 .homeb .item .pic {
     width: 58%;
     height: 2.3rem;
+}
+
+.homeb .item .pic img{
+    height: 230px;
+    object-fit: cover;
 }
 
 .homeb .item .txt {
