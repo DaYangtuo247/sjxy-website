@@ -54,13 +54,8 @@ $(document).ready(function () {
         loop: true,
         speed: 800,
         autoplay: true,
-        navigation: {
-            prevEl: ".swiper-button-prev",
-            nextEl: ".swiper-button-next",
-            hideOnClick: true,
-        },
         pagination: {
-            el: ".swiper-pagination",
+            el: ".min-swiper-pagination",
             clickable: true,
         },
     });
