@@ -222,7 +222,7 @@ svg {
     display: flex;
     align-items: center;
     line-height: 0.31rem;
-    color: #004a98;
+    color: #043b7a;
     position: absolute;
     right: 0;
     top: 0.15rem;
@@ -234,9 +234,9 @@ svg {
 }
 
 .intit h4 {
-    color: #0b3964;
+    color: #043b7a;
     position: relative;
-    border-left: 2px solid #0b3964;
+    border-left: 2px solid #043b7a;
     padding-left: 0.15rem;
     padding-top: 0.24rem;
 }
@@ -255,21 +255,34 @@ svg {
     left: 0.16rem;
 }
 
-.noticeAndNewBg {
+/* .noticeAndNewBg {
     background: #fff url(../img/bg2.png) center !important;
-}
+} */
 
 .homea {
     min-height: 2rem;
     background-size: cover;
-    padding: 0.7rem 0 1rem;
+    background: url(../img/bg1.png) no-repeat center;
+    /* padding: 0.7rem 0 1rem; */
+}
+.homea-a{
+    background-color: rgba(11, 85, 138, 0.85);
+    background-size: cover;
+    padding: 40px 0 60px 0;
 }
 
-.homea.inmor {
+.homea .intit .inmor {
     display: flex;
     align-items: center;
+    color: #fff;
 }
-
+.homea .intit h4{
+    color: #fff;
+    position: relative;
+    border-left: 2px solid #fff;
+    padding-left: 0.15rem;
+    padding-top: 0.24rem;
+}
 .homea.inmor .inmor .more-icon {
     width: 35px;
     height: 35px;
@@ -279,7 +292,7 @@ svg {
     margin-right: 20px;
     width: 480px;
     height: 1px;
-    background-color: #043b7a;
+    background-color: #fff;
 }
 
 .homea .aleft {
@@ -375,33 +388,36 @@ svg {
     font-size: 0.2rem;
     line-height: 1.5em;
     margin-bottom: 0.05rem;
+    color: #fff;
 }
 
 .homea .aright ul li .txt time {
     font-size: 0.18rem;
-    color: #222;
+    color:#fff;
 }
+
 
 .homeb {
     min-height: 2rem;
-    background: url(../img/bg3.jpg) no-repeat center;
+    background: url(../img/bg2.png) no-repeat center;
     background-size: cover;
 }
 
 .homeb-b {
-    background-color: rgba(11, 85, 138, 0.85);
+    /* background-color: rgba(11, 85, 138, 0.85); */
+    background-color:rgba(255, 255, 255, 0.6);
 }
 
 .homeb-b .inmor .line {
     margin-right: 20px;
     width: 100px;
     height: 1px;
-    background-color: #ffffff;
+    background-color: #043b7a;
 }
 
 .homeb .intit h4 {
-    color: #fff;
-    border-left-color: #fff;
+    color: #043b7a;
+    border-left-color: #043b7a;
     padding-top: 0;
 }
 
@@ -421,17 +437,17 @@ svg {
     width: 50%;
     padding: 0.7rem 0.5rem 0.6rem 0;
     border-right: 1px solid rgba(255, 255, 255, 0.15);
-    color: #fff;
+    color: #043b7a;
 }
 
 .homeb a {
-    color: #fff;
+    color: #043b7a;
 }
 
 .homeb .aright {
     width: 50%;
     padding: 0.7rem 0 0.6rem 0.5rem;
-    color: #fff;
+    color: #043b7a;
 }
 
 .homeb .item a {
@@ -490,17 +506,10 @@ svg {
 
 .homec {
     /* padding: .8rem .5rem; */
-    /* background: url(../img/bg2.png) no-repeat center; */
-    /* background-color: #f0f1f3; */
-    /* background-size: cover; */
+    background: url(../img/bg2.png) no-repeat center;
+    background-color: #fff;
+    background-size: cover;
 }
-
-/* 
-.backgroud-color {
-    overflow: hidden;
-    background-color: rgba(11, 85, 138, 0.6);
-    padding: 20px 0 40px 0;
-} */
 
 .fadeInUpa,
 .fadeInUpb,
@@ -883,7 +892,7 @@ svg:not(:root) {
     opacity: 1;
     visibility: visible;
     backdrop-filter: blur(4px);
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 .homea .aright ul li:hover {
