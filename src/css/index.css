@@ -248,6 +248,10 @@ svg {
     top: 0.15rem;
 }
 
+.inmor .view-more:hover{
+    color: #eb3939;
+}
+
 .intit {
     position: relative;
     margin-bottom: 0.4rem;
@@ -572,7 +576,7 @@ svg {
 
 .homec-c ul li {
     width: 31.3333%;
-    background-color: rgb(255, 255, 255, 0.3);
+    background-color: rgb(255, 255, 255, 0.7);
     box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(2px);
     margin-bottom: 30px;
