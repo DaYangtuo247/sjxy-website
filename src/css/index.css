@@ -243,7 +243,7 @@ svg {
     display: flex;
     align-items: center;
     line-height: 0.31rem;
-    color: #043b7a;
+    color: #2a3d89;
     position: absolute;
     right: 0;
     top: 0.15rem;
@@ -259,9 +259,9 @@ svg {
 }
 
 .intit h4 {
-    color: #043b7a;
+    color: #2a3d89;
     position: relative;
-    border-left: 2px solid #043b7a;
+    border-left: 2px solid #2a3d89;
     padding-left: 0.15rem;
     padding-top: 0.24rem;
 }
@@ -293,7 +293,7 @@ svg {
 }
 
 .homea-a {
-    background-color: rgba(11, 85, 138, 0.85);
+    background-color: rgba(24, 39, 122, 0.85);
     background-size: cover;
     padding: 40px 0 60px 0;
 }
@@ -386,7 +386,7 @@ svg {
 
 .homea .swiper-button-next,
 .homea .swiper-button-prev {
-    color: #043b7a;
+    color: #2a3d89;
     top: var(--swiper-navigation-top-offset, 40%) !important;
 }
 
@@ -442,12 +442,12 @@ svg {
     margin-right: 20px;
     width: 100px;
     height: 1px;
-    background-color: #043b7a;
+    background-color: #2a3d89;
 }
 
 .homeb .intit h4 {
-    color: #043b7a;
-    border-left-color: #043b7a;
+    color: #2a3d89;
+    border-left-color: #2a3d89;
     padding-top: 0;
 }
 
@@ -467,17 +467,17 @@ svg {
     width: 50%;
     padding: 0.7rem 0.5rem 0.6rem 0;
     border-right: 1px solid rgba(255, 255, 255, 0.15);
-    color: #043b7a;
+    color: #2a3d89;
 }
 
 .homeb a {
-    color: #043b7a;
+    color: #2a3d89;
 }
 
 .homeb .aright {
     width: 50%;
     padding: 0.7rem 0 0.6rem 0.5rem;
-    color: #043b7a;
+    color: #2a3d89;
 }
 
 .homeb .item a {
@@ -577,11 +577,11 @@ svg {
     margin-right: 20px;
     width: 500px;
     height: 1px;
-    background-color: #043b7a;
+    background-color: #2a3d89;
 }
 
 .homec-c .inmor:hover {
-    color: #043b7a;
+    color: ##2a3d89;
     border-bottom: none;
 }
 
@@ -981,12 +981,12 @@ svg:not(:root) {
 }
 
 .homeb .item:hover .txt {
-    color: #004a98;
+    color: #2a3d89;
 }
 
 .homeb .item:hover .txt span.aline_w {
-    color: #004a98;
-    background-image: linear-gradient(#004a98, #004a98);
+    color: #2a3d89;
+    background-image: linear-gradient(#2a3d89, #2a3d89);
     background-size: 100% 1px;
 }
 
@@ -1037,13 +1037,13 @@ svg:not(:root) {
 }
 
 .homeb ul li:hover span.aline_w {
-    color: #004a98;
-    background-image: linear-gradient(#004a98, #004a98);
+    color:#2a3d89 ;
+    background-image: linear-gradient(#2a3d89, #2a3d89);
     background-size: 100% 1px;
 }
 
 .homeb ul li:hover time {
-    color: #004a98;
+    color: #2a3d89;
 }
 
 .homea .aright ul li .txt {

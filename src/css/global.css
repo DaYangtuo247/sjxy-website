@@ -74,7 +74,7 @@
 
 .footer {
     padding: 42px 0 0;
-    background-color: #095b9a;
+    background-color: #2a3d89;
     background-position: bottom;
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -292,7 +292,7 @@
 .header.on {
     height: 0.8rem !important;
     background: none;
-    background-color: #095b9a;
+    background-color: #2a3d89;
 }
 
 .header.on .logo img {
