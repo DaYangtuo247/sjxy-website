@@ -8,6 +8,10 @@
     src: url(font/SourceHanSerifCN-Bold.woff) format("truetype");
 }
 
+body {
+    background-color: #fff!important;
+}
+
 .header {
     position: fixed;
     top: 0;

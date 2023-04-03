@@ -4,7 +4,7 @@
 
 .header,
 .header .show {
-    background-color: #095b9a;
+    background-color: #2a3d89;
 }
 
 
@@ -39,7 +39,7 @@
     font-family: "iconfont" !important;
     font-size: 35px;
     font-style: normal;
-    color: #095b9a;
+    color: #2a3d89;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -53,6 +53,10 @@
 .content .current-page {
     padding: 10px;
     height: 40px;
+}
+
+.content .current-page a:hover {
+    color: #2a3d89;
 }
 
 .content .current-page li {
@@ -72,7 +76,7 @@
     display: block;
     padding: 15px 50px;
     margin-bottom: 30px;
-    background-color: #095b9a;
+    background-color: #2a3d89;
 }
 
 .content-li h3::before {
