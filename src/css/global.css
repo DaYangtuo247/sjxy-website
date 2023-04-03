@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "iconfont";
-    src: url("font-icon/iconfont.ttf?t=1679474416216") format("truetype");
+    font-family: 'iconfont';
+    src: url('./font-icon/iconfont.woff2') format('woff2'), url('./font-icon/') format('woff'), url('iconfont.ttf?t=1680515404908') format('truetype');
 }
 
 @font-face {
@@ -419,7 +419,7 @@
 }
 
 #nav .sub_nav.box-child:hover,
-#nav .sub_nav a:hover + .box-child {
+#nav .sub_nav a:hover+.box-child {
     visibility: visible !important;
     opacity: 1 !important;
     filter: Alpha(opacity=100) !important;
@@ -448,13 +448,13 @@
     content: "";
 }
 
-#nav .sub_nav > .box > .li:first-child > a:first-of-type,
+#nav .sub_nav>.box>.li:first-child>a:first-of-type,
 #nav .sub_nav .box .box .li:first-child a:first-of-type {
     border-top-left-radius: 0.08rem;
     border-top-right-radius: 0.08rem;
 }
 
-#nav .sub_nav > .box > .li:last-child > a:last-of-type,
+#nav .sub_nav>.box>.li:last-child>a:last-of-type,
 #nav .sub_nav .box .box .li:last-child a:last-of-type {
     border-bottom-left-radius: 0.08rem;
     border-bottom-right-radius: 0.08rem;
@@ -544,12 +544,12 @@
     justify-content: center;
 }
 
-#nav li.on > a:before {
+#nav li.on>a:before {
     visibility: hidden;
     opacity: 0;
 }
 
-#nav li.on > a:after {
+#nav li.on>a:after {
     visibility: visible;
     width: 16px;
     opacity: 1;
@@ -576,4 +576,203 @@
 
 .right_on_list li {
     margin-left: 0.01rem;
+}
+
+.iconfont {
+    font-family: iconfont !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    /* . */
+    position: relative;
+    height: 100%;
+    min-height: 100vh;
+}
+
+html {
+    overflow: -moz-scrollbars-vertical;
+}
+
+:after,
+:before {
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+}
+
+html::-webkit-scrollbar {
+    width: 4px;
+    height: 8px;
+    background-color: #f5f5f5;
+}
+
+html::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #e2e2e2;
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #333;
+}
+
+a {
+    color: inherit;
+    outline: 0;
+    outline-style: none;
+    text-decoration: none;
+}
+
+h3,
+li,
+ul {
+    font-weight: 400;
+}
+
+nav,
+section {
+    display: block;
+}
+
+img {
+    vertical-align: middle;
+    outline-style: none;
+    margin: 0;
+    border: none;
+}
+
+ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+ul li {
+    list-style-type: none;
+    vertical-align: top;
+}
+
+html {
+    font-size: 100px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    position: relative;
+    overflow-x: hidden;
+    font-size: 0.16rem !important;
+    font-family: 微软雅黑 !important;
+    color: #333;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    background-color: #095b9a45;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #333;
+    background-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+}
+
+a:active,
+a:hover {
+    outline: 0;
+    text-decoration: none;
+}
+
+a:hover {
+    /* color: #d23626; */
+}
+
+img {
+    display: block;
+    padding: 0;
+    border: none;
+    -ms-interpolation-mode: bicubic;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+:focus {
+    outline: 0;
+}
+
+.check:not(:checked) {
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+}
+
+.check:not(:checked)+label {
+    position: relative;
+    display: inline-block;
+    height: 14px;
+    font-size: 14px;
+    cursor: pointer;
+    padding-left: 20px;
+}
+
+.radio:not(:checked)+label {
+    position: relative;
+    display: inline-block;
+    height: 16px;
+    font-size: 14px;
+    line-height: 16px;
+    cursor: pointer;
+    padding-left: 20px;
+}
+
+.radio:not(:checked)+label:after,
+.radio:not(:checked)+label:before {
+    border: 1px solid #888;
+}
+
+.radio:not(:checked) {
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+}
+
+::-webkit-input-placeholder {
+    color: #999;
+    opacity: 0.54;
+}
+
+::-webkit-file-upload-button {
+    font: inherit;
+    -webkit-appearance: button;
+}
+
+:-ms-input-placeholder {
+    color: #999;
 }

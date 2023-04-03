@@ -1,0 +1,107 @@
+.header {
+    background: none;
+}
+
+.header,
+.header .show {
+    background-color: #095b9a;
+}
+
+
+/* 内容页面 */
+
+.content {
+    width: 1200px;
+    margin: 136px auto 0;
+}
+
+.content-li {
+    margin-bottom: 30px;
+}
+
+.type {
+    position: absolute;
+    width: 70px;
+    left: 50px;
+    top: 10px;
+    background-color: #f3f3f3;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.corner-label {
+    position: absolute;
+    left: 0px;
+    top: 0;
+    font-family: "iconfont" !important;
+    font-size: 35px;
+    font-style: normal;
+    color: #095b9a;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.type p {
+    font-size: 28px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.content .current-page {
+    padding: 10px;
+    height: 40px;
+}
+
+.content .current-page li {
+    line-height: 16px;
+    font-size: 16px;
+    float: left;
+}
+
+.separate {
+    padding: 10px;
+}
+
+.content-li h3 {
+    position: relative;
+    color: #fff;
+    font-size: 24px;
+    display: block;
+    padding: 15px 50px;
+    margin-bottom: 30px;
+    background-color: #095b9a;
+}
+
+.content-li h3::before {
+    content: '';
+    width: 10px;
+    height: 27px;
+    left: 30px;
+    top: 14px;
+    position: absolute;
+    border-left: 4px solid #fff;
+}
+
+
+/* .content-li .list-detailed {
+    width: 200px;
+    float: left;
+    margin: 20px;
+} */
+
+.content-li ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.content-li .list-detailed .list-body img {
+    width: 200px;
+    height: 200px;
+}
+
+.content-li .list-detailed .list-body h4 {
+    text-align: center;
+}

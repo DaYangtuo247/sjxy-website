@@ -1,5 +1,5 @@
 // 大轮播图组件
-$(document).ready(function () {
+$(document).ready(function() {
     var swiper = new Swiper(".banner-swiper", {
         loop: true,
         speed: 1200,
@@ -18,16 +18,16 @@ $(document).ready(function () {
             el: ".swiper-pagination",
             clickable: true,
             bulletActiveClass: "active",
-            renderBullet: function (index, className) {
+            renderBullet: function(index, className) {
                 return '<span class="' + className + '">' + "<i></i></span>";
             },
         },
         //进度条配置
         on: {
-            init: function () {
+            init: function() {
                 this.emit("transitionStart");
             },
-            transitionStart: function () {
+            transitionStart: function() {
                 delay = this.params.autoplay.delay;
                 anime({
                     targets: ".banner-swiper .swiper-pagination .active i",
@@ -37,7 +37,7 @@ $(document).ready(function () {
                     duration: delay,
                 });
             },
-            slideChangeTransitionStart: function () {
+            slideChangeTransitionStart: function() {
                 var mainVisualImage = this.slides[this.activeIndex].querySelector("img,video");
                 anime({
                     targets: mainVisualImage,
@@ -61,32 +61,10 @@ $(document).ready(function () {
     });
 });
 
-// 显示/隐藏搜索框并提交
-$(document).ready(function () {
-    $("#searchBut").on("mousedown", function () {
-        var content = $("#searchText").val();
-        if (content && content.trim()) {
-            $("#searchForm").submit();
-        } else {
-            var searchText = $("#searchText");
-            if (searchText.css("opacity") == 0) {
-                searchText.css({ opacity: 1, width: "200px" });
-            } else {
-                searchText.css({ opacity: 0, width: "0px" });
-            }
-        }
-    });
-});
+
 
 //元素淡入淡出效果
-$(window).scroll(function () {
-    var scroll = $(window).scrollTop();
-    var head_hight = $(".show").outerHeight();
-    if (scroll >= head_hight) {
-        $(".header").addClass("on");
-    } else {
-        $(".header").removeClass("on");
-    }
+$(window).scroll(function() {
     var scrollTop = $(this).scrollTop();
     var homeaTop = $(".homea").outerHeight();
     var homebTop = $(".homeb").outerHeight();
@@ -94,36 +72,36 @@ $(window).scroll(function () {
     if (scrollTop > (homeaTop + homecTop) / 2) {
         $(".fadeInUpa").addClass("animate__animated animate__fadeInUp");
         $(".fadeInUpRighta").addClass("animate__animated animate__fadeInLeft");
-        $(".fadeInUpLefta").each(function (i) {
+        $(".fadeInUpLefta").each(function(i) {
             $(this)
                 .delay(i * 100)
-                .queue(function () {
+                .queue(function() {
                     $(this).addClass("animate__animated animate__fadeInRight");
                 });
         });
     }
     if (scrollTop > (homeaTop + homebTop + homecTop) / 1.4) {
         $(".fadeInUpb").addClass("animate__animated animate__fadeInUp");
-        $(".fadeInUpbb").each(function (i) {
+        $(".fadeInUpbb").each(function(i) {
             $(this)
                 .delay(i * 100)
-                .queue(function () {
+                .queue(function() {
                     $(this).addClass("animate__animated animate__fadeInUp");
                 });
         });
-        $(".fadeInUpbbb").each(function (i) {
+        $(".fadeInUpbbb").each(function(i) {
             $(this)
                 .delay(i * 100)
-                .queue(function () {
+                .queue(function() {
                     $(this).addClass("animate__animated animate__fadeInUp");
                 });
         });
     }
     if (scrollTop > homecTop / 4) {
-        $(".fadeInUpc").each(function (i) {
+        $(".fadeInUpc").each(function(i) {
             $(this)
                 .delay(i * 100)
-                .queue(function () {
+                .queue(function() {
                     $(this).addClass("animate__animated animate__fadeInUp");
                 });
         });
@@ -131,11 +109,11 @@ $(window).scroll(function () {
 });
 
 // 通知公告添加new标签
-$(document).ready(function () {
+$(document).ready(function() {
     var inform = $(".flex .fadeInUpc").toArray();
     $.getJSON(
         "https://worldtimeapi.org/api/timezone/Asia/Shanghai", // 世界时间api接口
-        function (data) {
+        function(data) {
             var datetime = data.datetime;
             var ChinaDate = new Date(String(datetime.slice(0, 10))); // 提取年月日
             for (var i = 0; i < inform.length; i++) {

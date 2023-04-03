@@ -6,6 +6,13 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "673793",
+      "name": "角标",
+      "font_class": "jiaobiao",
+      "unicode": "e6c7",
+      "unicode_decimal": 59079
+    },
+    {
       "icon_id": "2199033",
       "name": "文件管理",
       "font_class": "wenjianguanli",
