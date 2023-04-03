@@ -1,0 +1,6 @@
+/* 搜索结果列表页样式文件 */
+.search-content {
+    margin-top: 1.36rem !important;
+    height: 300px;
+    border: 1px solid red;
+}
