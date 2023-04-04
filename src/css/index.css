@@ -657,11 +657,6 @@ svg {
     box-shadow: 0 0 0.15rem rgba(0, 0, 0, 0.2);
 }
 
-.inmor:hover {
-    /* color: #fff; */
-    /* border-bottom: 1px solid #fff; */
-}
-
 .bel {
     font-family: "Times New Roman";
     font-style: italic;
@@ -1037,7 +1032,7 @@ svg:not(:root) {
 }
 
 .homeb ul li:hover span.aline_w {
-    color:#2a3d89 ;
+    color: #2a3d89;
     background-image: linear-gradient(#2a3d89, #2a3d89);
     background-size: 100% 1px;
 }

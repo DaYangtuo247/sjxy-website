@@ -106,3 +106,7 @@
     text-align: center;
     margin-top: 10px;
 }
+
+.content-li .list-detailed .list-body:hover h4 {
+    color: #2a3d89;
+}
