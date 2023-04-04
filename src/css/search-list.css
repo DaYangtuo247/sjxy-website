@@ -88,3 +88,49 @@
     margin-right: 30px;
     /* border: 1px solid red; */
 }
+.headStyle3fofxkzkha a:visited {
+    font-size: 12px;
+    font-family: 宋体;
+    color: #000000;
+    text-decoration: none;
+    line-height: 14px;
+}
+.headStyle3fofxkzkha .PrevDisabled {
+    font-size: 12px;
+    font-family: 宋体;
+    display: inline-block;
+    /* height: 14px; */
+    margin-right: 3px;
+    padding: 10px;
+    background: #fff;
+    color: #ccc;
+    border: solid 1px #AFD5F5;
+    line-height: 14px;
+}
+.headStyle3fofxkzkha a {
+    font-size: 12px;
+    font-family: 宋体;
+    display: inline-block;
+    /* height: 14px; */
+    padding: 10px;
+    border: solid 1px #AFD5F5;
+    /* background: #E1F0FD; */
+    font-weight: bold;
+    color: black;
+    MARGIN-RIGHT: 1px;
+    line-height: 14px;
+}
+/* 是这样吗页面跳转起来的话怎么做，是前端写的吗 */
+.headStyle3fofxkzkha .this-page{
+    font-size: 12px;
+    font-family: 宋体;
+    display: inline-block;
+    /* height: 14px; */
+    padding: 10px;
+    border: solid 1px #AFD5F5;
+    background: #E1F0FD;
+    font-weight: bold;
+    color: black;
+    MARGIN-RIGHT: 1px;
+    line-height: 14px;
+}
