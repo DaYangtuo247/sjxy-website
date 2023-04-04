@@ -10,7 +10,7 @@
 .content {
     display: flex;
     width: 1400px;
-    margin: 180px auto;
+    margin: 180px auto 20px;
 }
 
 .content .teacher-img img {
@@ -21,6 +21,7 @@
 .content .teacher-img {
     width: 200px;
     flex: 1;
+    margin-right: 20px;
 }
 
 .content .teacher-img p {
@@ -36,5 +37,10 @@
 
 .teacher-introduction {
     flex: 6;
-    background-color: #2a3d89;
+}
+
+.teacher-introduction p {
+    text-indent: 32px!important;
+    font-size: 16px;
+    line-height: 1.5;
 }
