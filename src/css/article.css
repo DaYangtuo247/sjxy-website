@@ -86,3 +86,31 @@
     height: 2px;
     background: #f2f2f2;
 }
+
+ul.attachment li {
+    line-height: 30px;
+}
+
+ul.attachment li:first-of-type {
+    margin-top: 14px;
+}
+
+.attachment {
+    margin-left: 20px;
+}
+
+ul.attachment li a {
+    transition: all 0.2s;
+    color: #1b40d8;
+    border-bottom: 1px solid #ffffff00;
+}
+
+ul.attachment li a:hover {
+    border-bottom: 1px solid #1b40d8;
+}
+iframe {
+    width: 100%;
+}
+.article-body p {
+    line-height: 1.5;
+}
