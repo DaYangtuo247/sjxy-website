@@ -107,7 +107,9 @@
     text-decoration: none;
     line-height: 14px;
 }
-.pagination-table .PrevDisabled {
+.pagination-table .Prev,
+.pagination-table .PrevDisabled,
+.pagination-table .NextDisabled {
     font-size: 12px;
     display: inline-block;
     /* height: 14px; */
@@ -115,6 +117,7 @@
     padding: 8px 12px;
     background: #fff;
     color: #ccc;
+    margin-right: 10px;
     border: solid 1px #00000012;
     line-height: 14px;
 }
@@ -126,7 +129,7 @@
     border: solid 1px #00000012;
     /* background: #E1F0FD; */
     color: black;
-    margin-right: 1px;
+    margin-right: 10px;
     line-height: 14px;
 }
 /* 是这样吗页面跳转起来的话怎么做，是前端写的吗 */
@@ -140,7 +143,7 @@
     background: #2a3d89;
     font-weight: bold;
     color: black;
-    margin-right: 1px;
+    margin-right: 10px;
     line-height: 14px;
 }
 
@@ -164,4 +167,10 @@
     font-size: 16px;
     line-height: 18px;
     color: #666;
+}
+
+.pagination-table a:hover {
+    border: 1px solid #2a3d89;
+    background-color: #2a3d89;
+    color: white;
 }
