@@ -13,7 +13,7 @@
 .content {
     position: relative;
     width: 1400px;
-    margin: 180px auto 0;
+    margin: 180px auto 20px;
 }
 
 .content-li {
@@ -91,13 +91,6 @@
     border-left: 4px solid #fff;
 }
 
-
-/* .content-li .list-detailed {
-    width: 200px;
-    float: left;
-    margin: 20px;
-} */
-
 .content-li ul {
     display: flex;
     justify-content: space-around;
@@ -109,5 +102,7 @@
 }
 
 .content-li .list-detailed .list-body h4 {
+    font-weight: 400;
     text-align: center;
+    margin-top: 10px;
 }
