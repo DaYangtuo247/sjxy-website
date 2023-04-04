@@ -1,0 +1,33 @@
+.header {
+    background: none;
+}
+
+.header,
+.header .show {
+    background-color: #2a3d89;
+}
+
+.content {
+    width: 1400px;
+    margin: 136px auto 0;
+}
+
+.content .teacher-img img {
+    width: 200px;
+    height: 200px;
+}
+
+.content .teacher-img {
+    width: 200px;
+}
+
+.content .teacher-img p {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.content .teacher-img p:nth-child(1) {
+    border-bottom: 1px solid #eee;
+}

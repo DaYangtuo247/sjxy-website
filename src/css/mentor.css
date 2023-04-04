@@ -11,8 +11,9 @@
 /* 内容页面 */
 
 .content {
-    width: 1200px;
-    margin: 136px auto 0;
+    position: relative;
+    width: 1400px;
+    margin: 180px auto 0;
 }
 
 .content-li {
@@ -22,14 +23,13 @@
 .type {
     position: absolute;
     width: 70px;
-    left: 50px;
+    left: -120px;
     top: 10px;
     background-color: #f3f3f3;
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
 }
 
 .corner-label {
@@ -51,7 +51,9 @@
 }
 
 .content .current-page {
+    float: right;
     padding: 10px;
+    padding-right: 0;
     height: 40px;
 }
 
