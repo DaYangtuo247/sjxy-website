@@ -176,7 +176,7 @@ body {
 
 .Copyright {
     padding: 10px 0;
-    border-top: 1px solid #417fba;
+    border-top: 1px solid #5374f9;
     text-align: center;
 }
 
@@ -780,4 +780,11 @@ img {
 
 :-ms-input-placeholder {
     color: #999;
+}
+
+.footer .footer-title,
+.footer .footer-title span,
+.footer-passage p,
+.footer-us p {
+    font-family: "nav-font";
 }

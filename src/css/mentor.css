@@ -7,29 +7,33 @@
     background-color: #2a3d89;
 }
 
-
 /* 内容页面 */
 
 .content {
     position: relative;
     width: 1400px;
-    margin: 180px auto 20px;
+    margin: 180px auto 120px;
 }
 
 .content-li {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .type {
     position: absolute;
-    width: 70px;
-    left: -120px;
-    top: 10px;
-    background-color: #f3f3f3;
-    padding: 15px;
-    border: 1px solid #ddd;
+    width: 30px;
+    left: 26px;
+    top: -10px;
+    /* background-color: #f3f3f3; */
+    /* padding: 15px; */
+    color: #2a3d89;
+    /* border: 1px solid #ddd; */
     border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); */
+}
+
+.type span {
+    font-size: 30px;
 }
 
 .corner-label {
@@ -45,20 +49,17 @@
 }
 
 .type p {
-    font-size: 28px;
-    line-height: 1.5;
+    font-size: 30px;
+    line-height: 1.3;
     text-align: center;
 }
 
 .content .current-page {
     float: right;
-    padding: 10px;
+    padding: 20px;
+    /* margin: 10px 0px; */
     padding-right: 0;
-    height: 40px;
-}
-
-.content .current-page a:hover {
-    color: #2a3d89;
+    /* height: 40px; */
 }
 
 .content .current-page li {
@@ -74,21 +75,21 @@
 .content-li h3 {
     position: relative;
     color: #fff;
-    font-size: 24px;
+    font-size: 22px;
     display: block;
-    padding: 15px 50px;
-    margin-bottom: 30px;
+    padding: 12px 35px;
+    margin-bottom: 50px;
     background-color: #2a3d89;
 }
 
 .content-li h3::before {
-    content: '';
+    content: "";
     width: 10px;
-    height: 27px;
-    left: 30px;
-    top: 14px;
+    height: 30px;
+    left: 16px;
+    top: 8px;
     position: absolute;
-    border-left: 4px solid #fff;
+    border-left: 3px solid #fff;
 }
 
 .content-li ul {
@@ -104,9 +105,22 @@
 .content-li .list-detailed .list-body h4 {
     font-weight: 400;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .content-li .list-detailed .list-body:hover h4 {
     color: #2a3d89;
+}
+
+.content-list {
+    width: 1300px;
+    margin-left: 100px;
+}
+
+.current-page a {
+    color: #828282;
+}
+
+.current-page a:hover {
+    color: #006ec7;
 }
