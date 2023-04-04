@@ -1,4 +1,15 @@
+.header {
+    background: none;
+}
+
+.header,
+.header .show {
+    background-color: #2a3d89;
+}
+
+
 /* 搜索结果列表页样式文件 */
+
 .search-content {
     /* margin-top: 1.36rem !important; */
     width: 1400px;
@@ -54,13 +65,13 @@
     transition: all .2s;
     padding: 0 80px;
     /* border: 1px solid orange; */
-    
-    
 }
+
 .search-result li:hover {
     background-image: url("../img/index-noice-dianac.png");
     transform: translateX(20px);
 }
+
 .search-result li a {
     border-bottom: 1px solid #eee;
     padding: 20px 50px;
@@ -69,7 +80,7 @@
     justify-content: space-between;
 }
 
-.search-result li p{
+.search-result li p {
     flex: 1;
     white-space: nowrap;
     overflow: hidden;

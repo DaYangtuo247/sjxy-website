@@ -1,4 +1,15 @@
+.header {
+    background: none;
+}
+
+.header,
+.header .show {
+    background-color: #2a3d89;
+}
+
+
 /* 文章列表的css样式单独写在这个文件 */
+
 .article-content {
     /* margin-top: 1.36rem !important; */
     /* padding: 50px 120px; */
@@ -7,6 +18,7 @@
     /* border: 1px solid red; */
     background-color: #fff;
 }
+
 .article-content .article-header {
     display: flex;
     justify-content: space-between;
@@ -14,10 +26,12 @@
     border-bottom: 3px solid #2a3d89;
     margin-bottom: 60px;
 }
+
 .article-header .column {
     color: #2a3d89;
     font-size: 50px;
 }
+
 .article-header .breadcrumb {
     display: flex;
 }
@@ -26,7 +40,7 @@
     margin: 0 10px;
 }
 
- .article-body .para-title {
+.article-body .para-title {
     text-align: center;
 }
 
@@ -42,7 +56,7 @@
     line-height: 30px;
 }
 
-.article-body img{
+.article-body img {
     margin: 0 auto;
     padding: 40px 0;
     width: 70%;
