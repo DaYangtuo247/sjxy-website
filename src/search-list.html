@@ -1,394 +1,305 @@
-<!DOCTYPE html>
-<html lang="en">
+.header { background: none; } .header, .header .show { background-color: #2a3d89; } /* 搜索结果列表页样式文件 */ .search-content { /* margin-top: 1.36rem !important; */ width: 1400px; margin: 1.36rem auto 0; /* border: 1px solid red; */ } .search-content .search-header
+{ display: flex; align-items: center; justify-content: flex-end; padding: 20px 0; position: relative; /* border: 1px solid blue; */ margin-bottom: 60px; } .search-header .column { width: 40px; /* border: 1px solid blueviolet; */ position: absolute; left:
+0; bottom: -100px; font-size: 36px; } .search-header .breadcrumb { display: flex; } .search-header .breadcrumb .oblique { margin: 0 10px; } .search-content .search-result { /* max-height根据实际情况来，自行修改 */ /* max-height: 600px; */ /* 上面这行代码隐藏就不会有滚动条了 */ overflow-x:
+hidden; overflow-y: auto; padding: 50px 0; /* border:1px solid red */ } .search-content .pagination { /* border: 1px solid red; */ text-align: center; margin: 50px auto; } .search-result li { background: url("../img/index-noice-dian.png") no-repeat 110px
+center; transition: all .2s; padding: 0 80px; /* border: 1px solid orange; */ } .search-result li:hover { background-image: url("../img/index-noice-dianac.png"); transform: translateX(20px); } .search-result li a { border-bottom: 1px solid #eee; padding:
+20px 50px; display: flex; align-items: center; justify-content: space-between; } .search-result li p { flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-right: 30px; /* border: 1px solid red; */ }
+<div class="li">
+    <a href="#">计算机基础系</a>
+</div>
+<div class="li">
+    <a href="#">公共教学系</a>
+</div>
+</div>
+</div>
+</li>
+<li>
+    <a href="#">
+        <h3>学科建设</h3>
+    </a>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>武汉轻工大学 数学与计算机学院 搜索列表</title>
-    <meta name="discription" content="武汉轻工大学 数学与计算机学院官方网站" />
-    <meta name="keyword" content="武汉轻工大学 数学与计算机学院官方网站" />
-    <link rel="Shortcut Icon" href="./img/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="./css/global.css">
-    <link rel="stylesheet" href="./css/animate.min.css">
-<<<<<<< HEAD
-    <link rel="stylesheet" href="./css/search.css">
-=======
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <link rel="stylesheet" href="./css/search-list.css">
->>>>>>> origin/main
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/global.js"></script>
-</head>
-
-<body>
-    <!-- 导航栏 start -->
-    <section class="header_box">
-        <section class="header">
-            <div class="show">
-                <div class="logo">
-                    <a href="#"><img src="./img/web-logo.png" /></a>
-                </div>
-                <div class="right">
-                    <div class="right_on">
-                        <ul class="right_on_list">
-                            <li>
-                                <a href="https://www.whpu.edu.cn/">学校首页</a>
-                            </li>
-                            <li class="search">
-                                <table>
-                                    <td><input type="text" placeholder="输入要查找的内容" id="searchText"></td>
-                                    <td><input type="button" value="&#xe752;" class="iconfont" id="searchBut"></td>
-                                </table>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="right_under">
-                        <nav id="nav">
-                            <ul>
-                                <li class="on">
-                                    <a href="#">
-                                        <h3>首页</h3>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <h3>学院概况</h3>
-                                    </a>
-                                    <div class="sub_nav">
-                                        <div class="box">
-                                            <div class="li">
-                                                <a href="">学院简介</a>
-                                            </div>
-                                            <div class="li">
-                                                <a href="">现任领导</a>
-                                            </div>
-                                            <div class="li">
-                                                <a href="">联系机构</a>
-                                                <div class="sub_nav box-child">
-                                                    <div class="box">
-                                                        <div class="li"><a href="#">学院行政办公室</a></div>
-                                                        <div class="li"><a href="#">学生工作办公室</a></div>
-                                                        <div class="li"><a href="#">学院系部办公室</a></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <h3>师资队伍</h3>
-                                    </a>
-                                    <div class="sub_nav">
-                                        <div class="box">
-                                            <div class="li">
-                                                <a href="#">计科人工智能系</a>
-                                            </div>
-                                            <div class="li">
-                                                <a href="#">软工大数据系</a>
-                                            </div>
-                                            <div class="li">
-                                                <a href="#">信息与计算科学系</a>
-                                            </div>
-                                            <div class="li">
-                                                <a href="#">计算机基础系</a>
-                                            </div>
-                                            <div class="li">
-                                                <a href="#">公共教学系</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <h3>学科建设</h3>
-                                    </a>
-
-                                    <div class="sub_nav">
-                                        <div class="box">
-                                            <div class="li">
-                                                <a href="#">重点学科</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <h3>本科生教育</h3>
-                                    </a>
-
-                                    <div class="sub_nav">
-                                        <div class="box">
-                                            <div class="li">
-                                                <a href="#">专业介绍</a>
-                                            </div>
-                                            <div class="li">
-                                                <a href="#">培养方案</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <h3>研究生教育</h3>
-                                    </a>
-                                    <div class="sub_nav">
-                                        <div class="box">
-                                            <div class="li">
-                                                <a href="#">专业介绍</a>
-                                            </div>
-                                            <div class="li">
-                                                <a href="#">培养方案</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <h3>党建工作</h3>
-                                    </a>
-                                    <div class="sub_nav">
-                                        <div class="box">
-                                            <div class="li">
-                                                <a href="#">党务通知</a>
-                                            </div>
-                                            <div class="li">
-                                                <a href="#">党建动态</a>
-                                            </div>
-                                            <div class="li">
-                                                <a href="#">上级文件</a>
-                                            </div>
-                                            <div class="li">
-                                                <a href="#">规章制度</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <h3>校友之窗</h3>
-                                    </a>
-                                    <div class="sub_nav">
-                                        <div class="box">
-                                            <div class="li">
-                                                <a href="#">校友名册</a>
-                                            </div>
-                                            <div class="li">
-                                                <a href="#">校友活动</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <h3>实习基地</h3>
-                                    </a>
-                                    <div class="sub_nav">
-                                        <div class="box">
-                                            <div class="li">
-                                                <a href="#">校外</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <h3>实验中心</h3>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
+    <div class="sub_nav">
+        <div class="box">
+            <div class="li">
+                <a href="#">重点学科</a>
             </div>
-        </section>
-    </section>
-    <!-- 导航栏 end -->
-
-    <!-- 内容 -->
-    <div class="search-content">
-        <!-- 头部板块 -->
-        <div class="search-header">
-            <div class="column">搜索结果</div>
-            <ul class="breadcrumb">
-                <li>
-                    <a href="index.html">首页</a>
-                </li>
-                <li class="oblique">/</li>
-                <li>搜索结果</li>
-            </ul>
         </div>
-        <!-- 结果列表 -->
-        <ul class="search-result">
+    </div>
+</li>
+<li>
+    <a href="#">
+        <h3>本科生教育</h3>
+    </a>
+
+    <div class="sub_nav">
+        <div class="box">
+            <div class="li">
+                <a href="#">专业介绍</a>
+            </div>
+            <div class="li">
+                <a href="#">培养方案</a>
+            </div>
+        </div>
+    </div>
+</li>
+<li>
+    <a href="#">
+        <h3>研究生教育</h3>
+    </a>
+    <div class="sub_nav">
+        <div class="box">
+            <div class="li">
+                <a href="#">专业介绍</a>
+            </div>
+            <div class="li">
+                <a href="#">培养方案</a>
+            </div>
+        </div>
+    </div>
+</li>
+<li>
+    <a href="#">
+        <h3>党建工作</h3>
+    </a>
+    <div class="sub_nav">
+        <div class="box">
+            <div class="li">
+                <a href="#">党务通知</a>
+            </div>
+            <div class="li">
+                <a href="#">党建动态</a>
+            </div>
+            <div class="li">
+                <a href="#">上级文件</a>
+            </div>
+            <div class="li">
+                <a href="#">规章制度</a>
+            </div>
+        </div>
+    </div>
+</li>
+<li>
+    <a href="#">
+        <h3>校友之窗</h3>
+    </a>
+    <div class="sub_nav">
+        <div class="box">
+            <div class="li">
+                <a href="#">校友名册</a>
+            </div>
+            <div class="li">
+                <a href="#">校友活动</a>
+            </div>
+        </div>
+    </div>
+</li>
+<li>
+    <a href="#">
+        <h3>实习基地</h3>
+    </a>
+    <div class="sub_nav">
+        <div class="box">
+            <div class="li">
+                <a href="#">校外</a>
+            </div>
+        </div>
+    </div>
+</li>
+<li>
+    <a href="#">
+        <h3>实验中心</h3>
+    </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</section>
+</section>
+<!-- 导航栏 end -->
+
+<!-- 内容 -->
+<div class="search-content">
+    <!-- 头部板块 -->
+    <div class="search-header">
+        <div class="column">搜索结果</div>
+        <ul class="breadcrumb">
             <li>
-                <a href="article.html">
-                    <p>计算机学院师生党支部委员培训班开班计算机学院师生党支部委员培训班开班计算机学院师生党支部委员培训班开班计算机学院师生党支部委员培训班开班计算机学院师生党支部委员培训班开班计算机学院师生党支部委员培训班开班计算机学院师生党支部委员培训班开班</p>
-                    <span>2023-04-03</span>
-                </a>
+                <a href="index.html">首页</a>
             </li>
-            <li>
-                <a href="article.html">
-                    <p>计算机学院师生党支部委员培训班开班</p>
-                    <span>2023-04-03</span>
-                </a>
-            </li>
-            <li>
-                <a href="article.html">
-                    <p>计算机学院师生党支部委员培训班开班</p>
-                    <span>2023-04-03</span>
-                </a>
-            </li>
-            <li>
-                <a href="article.html">
-                    <p>计算机学院师生党支部委员培训班开班</p>
-                    <span>2023-04-03</span>
-                </a>
-            </li>
-            <li>
-                <a href="article.html">
-                    <p>计算机学院师生党支部委员培训班开班</p>
-                    <span>2023-04-03</span>
-                </a>
-            </li>
-            <li>
-                <a href="article.html">
-                    <p>计算机学院师生党支部委员培训班开班</p>
-                    <span>2023-04-03</span>
-                </a>
-            </li>
-            <li>
-                <a href="article.html">
-                    <p>计算机学院师生党支部委员培训班开班</p>
-                    <span>2023-04-03</span>
-                </a>
-            </li>
-            <li>
-                <a href="article.html">
-                    <p>计算机学院师生党支部委员培训班开班</p>
-                    <span>2023-04-03</span>
-                </a>
-            </li>
-            <li>
-                <a href="article.html">
-                    <p>计算机学院师生党支部委员培训班开班</p>
-                    <span>2023-04-03</span>
-                </a>
-            </li>
-            <li>
-                <a href="article.html">
-                    <p>计算机学院师生党支部委员培训班开班</p>
-                    <span>2023-04-03</span>
-                </a>
-            </li>
-            <li>
-                <a href="article.html">
-                    <p>计算机学院师生党支部委员培训班开班</p>
-                    <span>2023-04-03</span>
-                </a>
-            </li>
-            <li>
-                <a href="article.html">
-                    <p>计算机学院师生党支部委员培训班开班</p>
-                    <span>2023-04-03</span>
-                </a>
-            </li>
-            <li>
-                <a href="article.html">
-                    <p>计算机学院师生党支部委员培训班开班</p>
-                    <span>2023-04-03</span>
-                </a>
-            </li>
-            <li>
-                <a href="article.html">
-                    <p>计算机学院师生党支部委员培训班开班</p>
-                    <span>2023-04-03</span>
-                </a>
-            </li>
-            <li>
-                <a href="article.html">
-                    <p>计算机学院师生党支部委员培训班开班</p>
-                    <span>2023-04-03</span>
-                </a>
-            </li>
+            <li class="oblique">/</li>
+            <li>搜索结果</li>
         </ul>
-
-        <!-- 分页器 -->
-        <div class="pagination">分页器区域</div>
     </div>
+    <!-- 结果列表 -->
+    <ul class="search-result">
+        <li>
+            <a href="article.html">
+                <p>计算机学院师生党支部委员培训班开班计算机学院师生党支部委员培训班开班计算机学院师生党支部委员培训班开班计算机学院师生党支部委员培训班开班计算机学院师生党支部委员培训班开班计算机学院师生党支部委员培训班开班计算机学院师生党支部委员培训班开班</p>
+                <span>2023-04-03</span>
+            </a>
+        </li>
+        <li>
+            <a href="article.html">
+                <p>计算机学院师生党支部委员培训班开班</p>
+                <span>2023-04-03</span>
+            </a>
+        </li>
+        <li>
+            <a href="article.html">
+                <p>计算机学院师生党支部委员培训班开班</p>
+                <span>2023-04-03</span>
+            </a>
+        </li>
+        <li>
+            <a href="article.html">
+                <p>计算机学院师生党支部委员培训班开班</p>
+                <span>2023-04-03</span>
+            </a>
+        </li>
+        <li>
+            <a href="article.html">
+                <p>计算机学院师生党支部委员培训班开班</p>
+                <span>2023-04-03</span>
+            </a>
+        </li>
+        <li>
+            <a href="article.html">
+                <p>计算机学院师生党支部委员培训班开班</p>
+                <span>2023-04-03</span>
+            </a>
+        </li>
+        <li>
+            <a href="article.html">
+                <p>计算机学院师生党支部委员培训班开班</p>
+                <span>2023-04-03</span>
+            </a>
+        </li>
+        <li>
+            <a href="article.html">
+                <p>计算机学院师生党支部委员培训班开班</p>
+                <span>2023-04-03</span>
+            </a>
+        </li>
+        <li>
+            <a href="article.html">
+                <p>计算机学院师生党支部委员培训班开班</p>
+                <span>2023-04-03</span>
+            </a>
+        </li>
+        <li>
+            <a href="article.html">
+                <p>计算机学院师生党支部委员培训班开班</p>
+                <span>2023-04-03</span>
+            </a>
+        </li>
+        <li>
+            <a href="article.html">
+                <p>计算机学院师生党支部委员培训班开班</p>
+                <span>2023-04-03</span>
+            </a>
+        </li>
+        <li>
+            <a href="article.html">
+                <p>计算机学院师生党支部委员培训班开班</p>
+                <span>2023-04-03</span>
+            </a>
+        </li>
+        <li>
+            <a href="article.html">
+                <p>计算机学院师生党支部委员培训班开班</p>
+                <span>2023-04-03</span>
+            </a>
+        </li>
+        <li>
+            <a href="article.html">
+                <p>计算机学院师生党支部委员培训班开班</p>
+                <span>2023-04-03</span>
+            </a>
+        </li>
+        <li>
+            <a href="article.html">
+                <p>计算机学院师生党支部委员培训班开班</p>
+                <span>2023-04-03</span>
+            </a>
+        </li>
+    </ul>
 
-    <!-- footer -->
-    <!--底部开始-->
-    <div class="footer">
-        <div class="container clearfix">
-            <div class="footer-top">
-                <!-- 底部logo -->
-                <div class="footer-logo">
-                    <a href="">
-                        <!-- 网站logo图片地址请在本组件"内容配置-网站logo"处填写 -->
-                        <a href="#"><img src="./img/web-logo.png"></a>
-                    </a>
-                </div>
-                <!-- 友情链接 -->
-                <div class="footer-passage">
-                    <h3 class="footer-title">快速通道<span> / Expressway</span></h3>
-                    <ul>
-                        <li class="on1">
-                            <a href="http://oa.whpu.edu.cn/">
-                                <div class="passage-img">&#xe621;</div>
-                                <p>办公系统</p>
-                            </a>
-                        </li>
-                        <li class="on2">
-                            <a href="http://jwglxt.whpu.edu.cn/xtgl/login_slogin.html?language=zh_CN&_t=1562291612815">
-                                <div class="passage-img">&#xe643;</div>
-                                <p>教务系统</p>
-                            </a>
-                        </li>
-                        <li class="on1">
-                            <a href="http://www.lib.whpu.edu.cn/">
-                                <div class="passage-img">&#xe630;</div>
-                                <p>图书查询</p>
-                            </a>
-                        </li>
-                        <li class="on2">
-                            <a
-                                href="http://cas.whpu.edu.cn/authserver/login?service=http%3A%2F%2Fehall.whpu.edu.cn%2Flogin%3Fservice%3Dhttp%3A%2F%2Fehall.whpu.edu.cn%2Fywtb-portal%2FLite%2Findex.html%23%2Fhome%2FLite_home">
-                                <div class="passage-img">&#xe63c;</div>
-                                <p>学工查询</p>
-                            </a>
-                        </li>
-                        <li class="on1">
-                            <a href="http://211.85.194.8/">
-                                <div class="passage-img">&#xe626;</div>
-                                <p>党务查询</p>
-                            </a>
-                        </li>
-                        <li class="on2">
-                            <img src="./img/weixinQR.jpg" title="微信公众号" style="width: 100%;">
-                        </li>
-                    </ul>
-                </div>
-                <!-- 联系我们 -->
-                <div class="footer-us">
-                    <h3 class="footer-title">联系我们<span> / Contact us</span></h3>
-                    <p>武汉轻工大学数学与计算机学院</p>
-                    <p>地址：湖北省武汉市东西湖区环湖中路36号</p>
-                    <p>学院电话：027-85504742　学工办：027-85504733</p>
-                    <p>邮编：430048</p>
-                    </p>
-                </div>
+    <!-- 分页器 -->
+    <div class="pagination">分页器区域</div>
+</div>
+
+<!-- footer -->
+<!--底部开始-->
+<div class="footer">
+    <div class="container clearfix">
+        <div class="footer-top">
+            <!-- 底部logo -->
+            <div class="footer-logo">
+                <a href="">
+                    <!-- 网站logo图片地址请在本组件"内容配置-网站logo"处填写 -->
+                    <a href="#"><img src="./img/web-logo.png"></a>
+                </a>
+            </div>
+            <!-- 友情链接 -->
+            <div class="footer-passage">
+                <h3 class="footer-title">快速通道<span> / Expressway</span></h3>
+                <ul>
+                    <li class="on1">
+                        <a href="http://oa.whpu.edu.cn/">
+                            <div class="passage-img">&#xe621;</div>
+                            <p>办公系统</p>
+                        </a>
+                    </li>
+                    <li class="on2">
+                        <a href="http://jwglxt.whpu.edu.cn/xtgl/login_slogin.html?language=zh_CN&_t=1562291612815">
+                            <div class="passage-img">&#xe643;</div>
+                            <p>教务系统</p>
+                        </a>
+                    </li>
+                    <li class="on1">
+                        <a href="http://www.lib.whpu.edu.cn/">
+                            <div class="passage-img">&#xe630;</div>
+                            <p>图书查询</p>
+                        </a>
+                    </li>
+                    <li class="on2">
+                        <a href="http://cas.whpu.edu.cn/authserver/login?service=http%3A%2F%2Fehall.whpu.edu.cn%2Flogin%3Fservice%3Dhttp%3A%2F%2Fehall.whpu.edu.cn%2Fywtb-portal%2FLite%2Findex.html%23%2Fhome%2FLite_home">
+                            <div class="passage-img">&#xe63c;</div>
+                            <p>学工查询</p>
+                        </a>
+                    </li>
+                    <li class="on1">
+                        <a href="http://211.85.194.8/">
+                            <div class="passage-img">&#xe626;</div>
+                            <p>党务查询</p>
+                        </a>
+                    </li>
+                    <li class="on2">
+                        <img src="./img/weixinQR.jpg" title="微信公众号" style="width: 100%;">
+                    </li>
+                </ul>
+            </div>
+            <!-- 联系我们 -->
+            <div class="footer-us">
+                <h3 class="footer-title">联系我们<span> / Contact us</span></h3>
+                <p>武汉轻工大学数学与计算机学院</p>
+                <p>地址：湖北省武汉市东西湖区环湖中路36号</p>
+                <p>学院电话：027-85504742　学工办：027-85504733</p>
+                <p>邮编：430048</p>
+                </p>
             </div>
         </div>
-        <div class="Copyright">
-            <p>
-            <p>Copyright © 2023 武汉轻工大学 数学与计算机学院</p>
-            <p>备案号: <a href="https://beian.miit.gov.cn/" target="_blank"
-                    textvalue="鄂ICP备15021561号-1">鄂ICP备15021561号-1</a></p>
-            </p>
-        </div>
     </div>
-    <!-- 底部footer end -->
+    <div class="Copyright">
+        <p>
+            <p>Copyright © 2023 武汉轻工大学 数学与计算机学院</p>
+            <p>备案号: <a href="https://beian.miit.gov.cn/" target="_blank" textvalue="鄂ICP备15021561号-1">鄂ICP备15021561号-1</a></p>
+        </p>
+    </div>
+</div>
+<!-- 底部footer end -->
 </body>
 
 </html>
