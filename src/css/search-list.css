@@ -7,11 +7,10 @@
     background-color: #2a3d89;
 }
 
-
 /* 搜索结果列表页样式文件 */
 
 .search-content {
-    /* margin-top: 1.36rem !important; */
+    margin-top: 180px !important;
     width: 1400px;
     margin: 1.36rem auto 0;
     /* border: 1px solid red; */
@@ -24,16 +23,22 @@
     padding: 20px 0;
     position: relative;
     /* border: 1px solid blue; */
-    margin-bottom: 60px;
+    /* margin-bottom: 60px; */
 }
 
 .search-header .column {
-    width: 40px;
+    width: 30px;
     /* border: 1px solid blueviolet; */
     position: absolute;
-    left: 0;
-    bottom: -100px;
-    font-size: 36px;
+    left: 25px;
+    color: #2a3d89;
+    bottom: -90px;
+    font-size: 30px;
+}
+
+.search-header .column span {
+    font-size: 30px;
+    line-height: 1.6;
 }
 
 .search-header .breadcrumb {
@@ -46,11 +51,14 @@
 
 .search-content .search-result {
     /* max-height根据实际情况来，自行修改 */
-    /* max-height: 600px;    */
+    /* max-height: 600px; */
     /* 上面这行代码隐藏就不会有滚动条了 */
     overflow-x: hidden;
+    width: 1300px;
     overflow-y: auto;
+    margin-left: 100px;
     padding: 50px 0;
+    padding-top: 10px;
     /* border:1px solid red */
 }
 
@@ -58,26 +66,30 @@
     /* border: 1px solid red; */
     text-align: center;
     margin: 50px auto;
+    margin-top: 15px;
 }
 
 .search-result li {
-    background: url("../img/index-noice-dian.png") no-repeat 110px center;
-    transition: all .2s;
     padding: 0 80px;
-    /* border: 1px solid orange; */
-}
-
-.search-result li:hover {
-    background-image: url("../img/index-noice-dianac.png");
-    transform: translateX(20px);
+    padding-left: 0px;
+    font-size: 18px;
+    border-bottom: 1px solid #eee;
 }
 
 .search-result li a {
-    border-bottom: 1px solid #eee;
+    /* border-bottom: 1px solid #eee; */
+    background: url("../img/index-noice-dian.png") no-repeat 25px center;
+    transition: all 0.4s;
     padding: 20px 50px;
+    padding-right: 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.search-result li:hover a {
+    background-image: url("../img/index-noice-dianac.png");
+    transform: translateX(20px);
 }
 
 .search-result li p {
@@ -88,49 +100,67 @@
     margin-right: 30px;
     /* border: 1px solid red; */
 }
-.headStyle3fofxkzkha a:visited {
+.pagination-table a:visited {
     font-size: 12px;
-    font-family: 宋体;
-    color: #000000;
+    color: #616161;
     text-decoration: none;
     line-height: 14px;
 }
-.headStyle3fofxkzkha .PrevDisabled {
+.pagination-table .PrevDisabled {
     font-size: 12px;
-    font-family: 宋体;
     display: inline-block;
     /* height: 14px; */
     margin-right: 3px;
-    padding: 10px;
+    padding: 8px 12px;
     background: #fff;
     color: #ccc;
-    border: solid 1px #AFD5F5;
+    border: solid 1px #00000012;
     line-height: 14px;
 }
-.headStyle3fofxkzkha a {
+.pagination-table a {
     font-size: 12px;
-    font-family: 宋体;
     display: inline-block;
     /* height: 14px; */
-    padding: 10px;
-    border: solid 1px #AFD5F5;
+    padding: 8px 12px;
+    border: solid 1px #00000012;
     /* background: #E1F0FD; */
-    font-weight: bold;
     color: black;
-    MARGIN-RIGHT: 1px;
+    margin-right: 1px;
     line-height: 14px;
 }
 /* 是这样吗页面跳转起来的话怎么做，是前端写的吗 */
-.headStyle3fofxkzkha .this-page{
+.pagination-table .this-page {
+    color: white !important;
     font-size: 12px;
-    font-family: 宋体;
     display: inline-block;
     /* height: 14px; */
-    padding: 10px;
-    border: solid 1px #AFD5F5;
-    background: #E1F0FD;
+    padding: 8px 12px;
+    border: solid 1px #2a3d89;
+    background: #2a3d89;
     font-weight: bold;
     color: black;
-    MARGIN-RIGHT: 1px;
+    margin-right: 1px;
     line-height: 14px;
+}
+
+.pagination-table tr td:first-of-type {
+    padding-right: 25px;
+    color: #808080 !important;
+}
+
+.search-result li:first-of-type {
+    border-top: 1px solid #eee;
+}
+
+.breadcrumb li a {
+    color: #828282;
+}
+
+.breadcrumb li a:hover {
+    color: #006ec7;
+}
+.search-result li span {
+    font-size: 16px;
+    line-height: 18px;
+    color: #666;
 }
