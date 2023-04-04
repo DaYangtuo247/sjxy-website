@@ -1,7 +1,9 @@
 /* 文章列表的css样式单独写在这个文件 */
 .article-content {
-    margin-top: 1.36rem !important;
-    padding: 50px 120px;
+    /* margin-top: 1.36rem !important; */
+    /* padding: 50px 120px; */
+    width: 1400px;
+    margin: 1.36rem auto 0;
     /* border: 1px solid red; */
     background-color: #fff;
 }

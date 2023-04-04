@@ -1,0 +1,69 @@
+/* 搜索结果列表页样式文件 */
+.search-content {
+    /* margin-top: 1.36rem !important; */
+    width: 1400px;
+    margin: 1.36rem auto 0;
+    /* border: 1px solid red; */
+}
+
+.search-content .search-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px 0;
+    position: relative;
+    /* border: 1px solid blue; */
+    margin-bottom: 60px;
+}
+
+.search-header .column {
+    width: 40px;
+    /* border: 1px solid blueviolet; */
+    position: absolute;
+    left: 0;
+    bottom: -100px;
+    font-size: 36px;
+}
+
+.search-header .breadcrumb {
+    display: flex;
+}
+
+.search-header .breadcrumb .oblique {
+    margin: 0 10px;
+}
+
+.search-content .search-result {
+    /* max-height根据实际情况来，自行修改 */
+    max-height: 600px;   
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 50px 0;
+    /* border:1px solid red */
+}
+
+.search-content .pagination {
+    /* border: 1px solid red; */
+    text-align: center;
+    margin: 50px auto;
+}
+
+.search-result li {
+    background: url("../img/index-noice-dian.png") no-repeat 110px center;
+    transition: all .2s;
+    padding: 0 80px;
+    /* border: 1px solid orange; */
+    
+    
+}
+.search-result li:hover {
+    background-image: url("../img/index-noice-dianac.png");
+    transform: translateX(20px);
+}
+.search-result li a {
+    border-bottom: 1px solid #eee;
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
