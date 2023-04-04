@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="./css/search.css">
     <script src="./js/jquery.min.js"></script>
+    <script src="./js/global.js"></script>
 </head>
 
 <body>
@@ -201,60 +202,26 @@
         </section>
     </section>
     <!-- 导航栏 end -->
-    <div class="search-content"></div>
-    <script>
-        //元素淡入淡出效果
-        $(window).scroll(function () {
-            var scroll = $(window).scrollTop();
-            var head_hight = $(".show").outerHeight();
-            if (scroll >= head_hight) {
-                $(".header").addClass("on");
-            } else {
-                $(".header").removeClass("on");
-            }
-            var scrollTop = $(this).scrollTop();
-            var homeaTop = $(".homea").outerHeight();
-            var homebTop = $(".homeb").outerHeight();
-            var homecTop = $(".homec").outerHeight();
-            if (scrollTop > (homeaTop + homecTop) / 2) {
-                $(".fadeInUpa").addClass("animate__animated animate__fadeInUp");
-                $(".fadeInUpRighta").addClass("animate__animated animate__fadeInLeft");
-                $(".fadeInUpLefta").each(function (i) {
-                    $(this)
-                        .delay(i * 100)
-                        .queue(function () {
-                            $(this).addClass("animate__animated animate__fadeInRight");
-                        });
-                });
-            }
-            if (scrollTop > (homeaTop + homebTop + homecTop) / 1.4) {
-                $(".fadeInUpb").addClass("animate__animated animate__fadeInUp");
-                $(".fadeInUpbb").each(function (i) {
-                    $(this)
-                        .delay(i * 100)
-                        .queue(function () {
-                            $(this).addClass("animate__animated animate__fadeInUp");
-                        });
-                });
-                $(".fadeInUpbbb").each(function (i) {
-                    $(this)
-                        .delay(i * 100)
-                        .queue(function () {
-                            $(this).addClass("animate__animated animate__fadeInUp");
-                        });
-                });
-            }
-            if (scrollTop > homecTop / 4) {
-                $(".fadeInUpc").each(function (i) {
-                    $(this)
-                        .delay(i * 100)
-                        .queue(function () {
-                            $(this).addClass("animate__animated animate__fadeInUp");
-                        });
-                });
-            }
-        });
-    </script>
+    <div class="search-content">
+        <div class="container clearfix">
+            <div class="content-left">
+                <h3 class="column">搜索结果</h3>
+            </div>
+            <div class="content-right">
+                <div class="location">
+                    <ul class="breadcrumb">
+                        <li>
+                            <a href="index.html">首页</a>
+                        </li>
+                        <li class="oblique">/</li>
+                        <li>
+                            <a href="#">搜索结果</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="./css/article.css">
     <script src="./js/jquery.min.js"></script>
+    <script src="./js/global.js"></script>
     <style>
 
     </style>
@@ -240,7 +241,7 @@
                 做好需求侧“减”文章，关键在于推进全链条节约减损。《意见》指出，深入开展粮食节约行动，推进全链条节约减损，健全常态化、长效化工作机制。节约减损涉及的链条长、范围广、环节多，我们必须坚持系统思维、综合施策，促进粮食“产购储加销”全产业链节约减损协同联动。实施“精量播种、机收减损行动”，加强生产环节源头管控；实施“优质粮食工程”，促进产后环节减损增收；强化储运环节抛撒遗漏问题治理，提升粮食储藏保管精细化水平；实施“农业科技攻关行动”，提升加工环节科技水平，延伸粮油产业链条，发展稻米副产品精深加工，加强粮食资源综合利用，减少非必要损耗。遏制消费环节损失浪费，持续抓好爱粮节粮宣传，培育节粮文化，形成全民厉行节约、反对浪费的社会风尚，以减少损耗来增量。（作者系武汉轻工大学党委书记）
                 
             </p>
-            <img src="./img/bg1.png">
+            <img src="./img/banner/banner0.jpg">
             <p class="content">
                 守稳荆楚粮仓，做好供给侧“增减”文章
 
@@ -254,7 +255,7 @@
                 
                 做好需求侧“减”文章，关键在于推进全链条节约减损。《意见》指出，深入开展粮食节约行动，推进全链条节约减损，健全常态化、长效化工作机制。节约减损涉及的链条长、范围广、环节多，我们必须坚持系统思维、综合施策，促进粮食“产购储加销”全产业链节约减损协同联动。实施“精量播种、机收减损行动”，加强生产环节源头管控；实施“优质粮食工程”，促进产后环节减损增收；强化储运环节抛撒遗漏问题治理，提升粮食储藏保管精细化水平；实施“农业科技攻关行动”，提升加工环节科技水平，延伸粮油产业链条，发展稻米副产品精深加工，加强粮食资源综合利用，减少非必要损耗。遏制消费环节损失浪费，持续抓好爱粮节粮宣传，培育节粮文化，形成全民厉行节约、反对浪费的社会风尚，以减少损耗来增量。（作者系武汉轻工大学党委书记）
             </p>
-            <hr>
+            <!-- <hr> -->
         </div>
 
 
@@ -333,60 +334,6 @@
         </div>
     </div>
     <!-- 底部footer end -->
-    <script>
-        //元素淡入淡出效果
-        $(window).scroll(function () {
-            var scroll = $(window).scrollTop();
-            var head_hight = $(".show").outerHeight();
-            if (scroll >= head_hight) {
-                $(".header").addClass("on");
-            } else {
-                $(".header").removeClass("on");
-            }
-            var scrollTop = $(this).scrollTop();
-            var homeaTop = $(".homea").outerHeight();
-            var homebTop = $(".homeb").outerHeight();
-            var homecTop = $(".homec").outerHeight();
-            if (scrollTop > (homeaTop + homecTop) / 2) {
-                $(".fadeInUpa").addClass("animate__animated animate__fadeInUp");
-                $(".fadeInUpRighta").addClass("animate__animated animate__fadeInLeft");
-                $(".fadeInUpLefta").each(function (i) {
-                    $(this)
-                        .delay(i * 100)
-                        .queue(function () {
-                            $(this).addClass("animate__animated animate__fadeInRight");
-                        });
-                });
-            }
-            if (scrollTop > (homeaTop + homebTop + homecTop) / 1.4) {
-                $(".fadeInUpb").addClass("animate__animated animate__fadeInUp");
-                $(".fadeInUpbb").each(function (i) {
-                    $(this)
-                        .delay(i * 100)
-                        .queue(function () {
-                            $(this).addClass("animate__animated animate__fadeInUp");
-                        });
-                });
-                $(".fadeInUpbbb").each(function (i) {
-                    $(this)
-                        .delay(i * 100)
-                        .queue(function () {
-                            $(this).addClass("animate__animated animate__fadeInUp");
-                        });
-                });
-            }
-            if (scrollTop > homecTop / 4) {
-                $(".fadeInUpc").each(function (i) {
-                    $(this)
-                        .delay(i * 100)
-                        .queue(function () {
-                            $(this).addClass("animate__animated animate__fadeInUp");
-                        });
-                });
-            }
-        });
-
-    </script>
 </body>
 
 </html>
