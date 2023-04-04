@@ -7,11 +7,10 @@
     background-color: #2a3d89;
 }
 
-
 /* 文章列表的css样式单独写在这个文件 */
 
 .article-content {
-    /* margin-top: 1.36rem !important; */
+    margin-top: 180px !important;
     /* padding: 50px 120px; */
     width: 1400px;
     margin: 1.36rem auto 0;
@@ -22,18 +21,29 @@
 .article-content .article-header {
     display: flex;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 10px 0 15px;
     border-bottom: 3px solid #2a3d89;
-    margin-bottom: 60px;
+    /* margin-bottom: 50px; */
 }
 
 .article-header .column {
     color: #2a3d89;
-    font-size: 50px;
+    /* font-size: 50px; */
+}
+
+.article-header .breadcrumb a {
+    color: #999;
+}
+.article-header .breadcrumb a:hover {
+    color: #006ec7;
 }
 
 .article-header .breadcrumb {
     display: flex;
+}
+
+.article-header .breadcrumb li {
+    line-height: 32px;
 }
 
 .article-header .breadcrumb .oblique {
@@ -42,22 +52,37 @@
 
 .article-body .para-title {
     text-align: center;
+    color: #2a3d89;
 }
 
 .article-body .issue-info {
-    margin: 30px 0;
-    color: #000;
+    margin: 24px 0;
+    padding: 16px 0;
+    border-top: 2px solid #f2f2f2;
+    border-bottom: 2px solid #f2f2f2;
+    color: #999;
     text-align: center;
 }
 
 .article-body .content {
     text-indent: 2em;
-    font-size: 22px;
-    line-height: 30px;
+    font-size: 20px;
+    line-height: 1.6;
 }
 
 .article-body img {
     margin: 0 auto;
     padding: 40px 0;
     width: 70%;
+}
+
+.article-body {
+    padding: 46px 4.5%;
+    padding-bottom: 70px;
+}
+
+.article-body .article-body-content hr {
+    border: none;
+    height: 2px;
+    background: #f2f2f2;
 }
