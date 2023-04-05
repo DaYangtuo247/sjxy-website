@@ -562,6 +562,7 @@ body {
 
 .header_box #nav ul li h3 {
     color: #fff;
+    cursor: pointer;
 }
 
 .right_on_list li a {
