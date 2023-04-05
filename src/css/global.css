@@ -785,3 +785,7 @@ img {
 .footer-us p {
     font-family: "nav-font";
 }
+
+table {
+    margin: 0 auto;
+}

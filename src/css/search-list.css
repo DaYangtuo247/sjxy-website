@@ -33,8 +33,9 @@
     position: absolute;
     left: 25px;
     color: #2a3d89;
-    bottom: -90px;
+    bottom: -150px;
     font-size: 30px;
+    line-height: 40px;
 }
 
 .search-header .column span {
@@ -102,54 +103,57 @@
     /* border: 1px solid red; */
 }
 .pagination-table a:visited {
-    font-size: 12px;
-    color: #616161;
-    text-decoration: none;
-    line-height: 14px;
+    font-size: 12px !important;
+    color: #616161 !important;
+    text-decoration: none !important;
+    line-height: 14px !important;
 }
 .pagination-table .Prev,
 .pagination-table .PrevDisabled,
 .pagination-table .NextDisabled {
-    font-size: 12px;
-    display: inline-block;
-    /* height: 14px; */
-    margin-right: 3px;
-    padding: 8px 12px;
-    background: #fff;
+    font-size: 12px !important;
+    display: inline-block !important;
+    height: 32px !important;
+    margin-right: 3px !important;
+    padding: 8px 12px !important;
+    background: #fff !important;
     color: #ccccccd6;
-    margin-right: 10px;
-    border: solid 1px #00000012;
-    line-height: 14px;
+    margin-right: 10px !important;
+    border: solid 1px #00000012 !important;
+    line-height: 14px !important;
 }
 .pagination-table a {
-    font-size: 12px;
-    display: inline-block;
-    /* height: 14px; */
-    padding: 8px 12px;
-    border: solid 1px #00000012;
+    font-size: 12px !important;
+    display: inline-block !important;
+    height: 32px !important;
+    padding: 8px 12px !important;
+    border: solid 1px #00000012 !important;
     /* background: #E1F0FD; */
-    color: black;
-    margin-right: 10px;
-    line-height: 14px;
+    color: black !important;
+    margin-right: 10px !important;
+    line-height: 14px !important;
 }
 /* 是这样吗页面跳转起来的话怎么做，是前端写的吗 */
 .pagination-table .this-page {
     color: white !important;
-    font-size: 12px;
-    display: inline-block;
-    /* height: 14px; */
-    padding: 8px 12px;
-    border: solid 1px #2a3d89;
-    background: #2a3d89;
-    font-weight: bold;
-    color: black;
-    margin-right: 10px;
-    line-height: 14px;
+    font-size: 12px !important;
+    display: inline-block !important;
+    height: 32px !important;
+    padding: 8px 12px !important;
+    border: solid 1px #2a3d89 !important;
+    background: #2a3d89 !important;
+    font-weight: bold !important;
+    margin-right: 10px !important;
+    line-height: 14px !important;
 }
 
 .pagination-table tr td:first-of-type {
-    padding-right: 25px;
+    padding-right: 25px !important;
     color: #808080 !important;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 400;
+    font-family: sans-serif;
 }
 
 .search-result li:first-of-type {
@@ -170,7 +174,11 @@
 }
 
 .pagination-table a:hover {
-    border: 1px solid #2a3d89;
-    background-color: #2a3d89;
-    color: white;
+    border: 1px solid #2a3d89 !important;
+    background-color: #2a3d89 !important;
+    color: white !important;
+}
+
+pagination-table * {
+    font-family: initial !important;
 }
