@@ -6,10 +6,7 @@ $(document).ready(function() {
         centeredSlides: true,
         allowTouchMove: true,
         watchSlidesProgress: true,
-        autoplay: {
-            delay: 4000,
-            disableOnInteraction: false,
-        },
+        autoplay: false,
         navigation: {
             prevEl: ".swiper-button-prev",
             nextEl: ".swiper-button-next",
@@ -59,12 +56,24 @@ $(document).ready(function() {
             clickable: true,
         },
     });
-});
 
+    //判断是否为移动端
+    var isMobile = 'ontouchstart' in document;
+    if (isMobile) {
+        $('.fadeInUpa,.fadeInUpb,.fadeInUpc,.fadeInUpRighta,.fadeInUpLefta,.fadeInUpbb,.fadeInUpbbb').css('opacity', '1.0');
+        $('.banner-swiper').css('height', '30vh');
+    } else {
+        // PC端样式
+        return;
+    }
+
+});
 
 
 //元素淡入淡出效果
 $(window).scroll(function() {
+    var isMobile1 = 'ontouchstart' in document;
+    if (isMobile1) return;
     var scrollTop = $(this).scrollTop();
     var homeaTop = $(".homea").outerHeight();
     var homebTop = $(".homeb").outerHeight();
