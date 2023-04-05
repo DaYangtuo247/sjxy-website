@@ -1,7 +1,6 @@
 @font-face {
     font-family: "iconfont";
-    src: url("./font-icon/iconfont.woff2?t=1680619639471") format("woff2"), url("./font-icon/iconfont.woff?t=1680619639471") format("woff"),
-        url("./font-icon/iconfont.ttf?t=1680619639471") format("truetype");
+    src: url("./font-icon/iconfont.woff2?t=1680619639471") format("woff2"), url("./font-icon/iconfont.woff?t=1680619639471") format("woff"), url("./font-icon/iconfont.ttf?t=1680619639471") format("truetype");
 }
 
 @font-face {
@@ -424,7 +423,7 @@ body {
 }
 
 #nav .sub_nav.box-child:hover,
-#nav .sub_nav a:hover + .box-child {
+#nav .sub_nav a:hover+.box-child {
     visibility: visible !important;
     opacity: 1 !important;
     filter: Alpha(opacity=100) !important;
@@ -453,13 +452,13 @@ body {
     content: "";
 }
 
-#nav .sub_nav > .box > .li:first-child > a:first-of-type,
+#nav .sub_nav>.box>.li:first-child>a:first-of-type,
 #nav .sub_nav .box .box .li:first-child a:first-of-type {
     border-top-left-radius: 0.08rem;
     border-top-right-radius: 0.08rem;
 }
 
-#nav .sub_nav > .box > .li:last-child > a:last-of-type,
+#nav .sub_nav>.box>.li:last-child>a:last-of-type,
 #nav .sub_nav .box .box .li:last-child a:last-of-type {
     border-bottom-left-radius: 0.08rem;
     border-bottom-right-radius: 0.08rem;
@@ -549,12 +548,12 @@ body {
     justify-content: center;
 }
 
-#nav li.on > a:before {
+#nav li.on>a:before {
     visibility: hidden;
     opacity: 0;
 }
 
-#nav li.on > a:after {
+#nav li.on>a:after {
     visibility: visible;
     width: 16px;
     opacity: 1;
@@ -736,7 +735,7 @@ img {
     opacity: 0;
 }
 
-.check:not(:checked) + label {
+.check:not(:checked)+label {
     position: relative;
     display: inline-block;
     height: 14px;
@@ -745,7 +744,7 @@ img {
     padding-left: 20px;
 }
 
-.radio:not(:checked) + label {
+.radio:not(:checked)+label {
     position: relative;
     display: inline-block;
     height: 16px;
@@ -755,8 +754,8 @@ img {
     padding-left: 20px;
 }
 
-.radio:not(:checked) + label:after,
-.radio:not(:checked) + label:before {
+.radio:not(:checked)+label:after,
+.radio:not(:checked)+label:before {
     border: 1px solid #888;
 }
 
@@ -789,4 +788,48 @@ img {
 
 table {
     margin: 0 auto;
+}
+
+
+/* 面包屑 */
+
+.current-position {
+    position: relative;
+}
+
+.current-position .breadcrumb a {
+    color: #999;
+}
+
+.current-position .breadcrumb a:hover {
+    color: #006ec7;
+}
+
+.current-position .breadcrumb {
+    display: flex;
+    float: right;
+    margin-bottom: 20px;
+}
+
+.current-position .breadcrumb li {
+    line-height: 32px;
+}
+
+.current-position .breadcrumb .oblique {
+    margin: 0 10px;
+}
+
+.current-position .column {
+    width: 30px;
+    position: absolute;
+    left: 25px;
+    top: 0;
+    color: #2a3d89;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.current-position .column span {
+    font-size: 30px;
+    line-height: 1.6;
 }

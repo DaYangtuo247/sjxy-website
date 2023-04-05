@@ -7,6 +7,7 @@
     background-color: #2a3d89;
 }
 
+
 /* 搜索结果列表页样式文件 */
 
 .search-content {
@@ -21,34 +22,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding: 20px 0;
     position: relative;
-    /* border: 1px solid blue; */
-    /* margin-bottom: 60px; */
-}
-
-.search-header .column {
-    width: 30px;
-    /* border: 1px solid blueviolet; */
-    position: absolute;
-    left: 25px;
-    color: #2a3d89;
-    bottom: -150px;
-    font-size: 30px;
-    line-height: 40px;
-}
-
-.search-header .column span {
-    font-size: 30px;
-    line-height: 1.6;
-}
-
-.search-header .breadcrumb {
-    display: flex;
-}
-
-.search-header .breadcrumb .oblique {
-    margin: 0 10px;
 }
 
 .search-content .search-result {
@@ -102,12 +76,14 @@
     margin-right: 30px;
     /* border: 1px solid red; */
 }
+
 .pagination-table a:visited {
     font-size: 12px !important;
     color: #616161 !important;
     text-decoration: none !important;
     line-height: 14px !important;
 }
+
 .pagination-table .Prev,
 .pagination-table .PrevDisabled,
 .pagination-table .NextDisabled {
@@ -122,6 +98,7 @@
     border: solid 1px #00000012 !important;
     line-height: 14px !important;
 }
+
 .pagination-table a {
     font-size: 12px !important;
     display: inline-block !important;
@@ -133,7 +110,10 @@
     margin-right: 10px !important;
     line-height: 14px !important;
 }
+
+
 /* 是这样吗页面跳转起来的话怎么做，是前端写的吗 */
+
 .pagination-table .this-page {
     color: white !important;
     font-size: 12px !important;
@@ -167,6 +147,7 @@
 .breadcrumb li a:hover {
     color: #006ec7;
 }
+
 .search-result li span {
     font-size: 16px;
     line-height: 18px;

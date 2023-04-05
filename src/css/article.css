@@ -7,6 +7,7 @@
     background-color: #2a3d89;
 }
 
+
 /* 文章列表的css样式单独写在这个文件 */
 
 .article-content {
@@ -19,36 +20,15 @@
     background-color: #fff;
 }
 
+.article-content h1 {
+    color: #2a3d89;
+}
+
 .article-content .article-header {
-    display: flex;
     justify-content: space-between;
     padding: 10px 0 15px;
     border-bottom: 3px solid #2a3d89;
     /* margin-bottom: 50px; */
-}
-
-.article-header .column {
-    color: #2a3d89;
-    /* font-size: 50px; */
-}
-
-.article-header .breadcrumb a {
-    color: #999;
-}
-.article-header .breadcrumb a:hover {
-    color: #006ec7;
-}
-
-.article-header .breadcrumb {
-    display: flex;
-}
-
-.article-header .breadcrumb li {
-    line-height: 32px;
-}
-
-.article-header .breadcrumb .oblique {
-    margin: 0 10px;
 }
 
 .article-body .para-title {
@@ -109,9 +89,11 @@ ul.attachment li a {
 ul.attachment li a:hover {
     border-bottom: 1px solid #1b40d8;
 }
+
 iframe {
     width: 100%;
 }
+
 .article-body p {
     line-height: 1.5;
 }
