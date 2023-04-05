@@ -6,7 +6,10 @@ $(document).ready(function() {
         centeredSlides: true,
         allowTouchMove: true,
         watchSlidesProgress: true,
-        autoplay: false,
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false
+        },
         navigation: {
             prevEl: ".swiper-button-prev",
             nextEl: ".swiper-button-next",
