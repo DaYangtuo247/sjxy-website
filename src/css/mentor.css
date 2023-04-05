@@ -59,8 +59,9 @@
 }
 
 .content-li .list-detailed .list-body img {
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 280px;
+    object-fit: cover;
 }
 
 .content-li .list-detailed .list-body h4 {
