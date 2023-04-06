@@ -31,15 +31,18 @@
 .content .teacher-img p {
     display: block;
     font-size: 18px;
-    font-weight: 400;
-    font-family: "nav-font";
     padding: 10px;
+}
+
+.content .teacher-img p span {
+    font-weight: 400;
 }
 
 .content .teacher-img p i {
     font-weight: 600;
     font-style: normal;
     text-align: justify;
+    font-family: "nav-font";
 }
 
 .content .teacher-img p:nth-of-type(1) {
