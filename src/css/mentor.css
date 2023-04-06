@@ -52,7 +52,8 @@
 
 .content-li .list-detailed .list-body img {
     width: 220px;
-    height: 280px;
+    border-radius: 5px;
+    height: 220px;
     object-fit: cover;
 }
 
@@ -77,4 +78,15 @@
 
 .current-page a:hover {
     color: #006ec7;
+}
+
+.list-body {
+    border: 1px  solid #e7e7e778;
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: 5px 4px 8px rgb(0 0 0 / 5%);
+}
+
+.list-body h4 {
+    font-family: 'nav-font';
 }

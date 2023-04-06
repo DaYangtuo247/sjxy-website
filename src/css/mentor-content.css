@@ -14,6 +14,7 @@
 
 .content .teacher-img img {
     display: block;
+    border-radius: 7px;
     width: 100%;
     object-fit: cover;
     margin-bottom: 10px;
