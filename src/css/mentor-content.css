@@ -63,7 +63,7 @@
 }
 
 .teacher-introduction p {
-    text-indent: 32px !important;
+    /* text-indent: 32px !important; */
     font-size: 18px;
     line-height: 1.5;
 }
