@@ -8,21 +8,24 @@
 }
 
 .content {
-    display: flex;
     width: 1400px;
     margin: 180px auto 120px;
 }
 
 .content .teacher-img img {
-    width: 400px;
+    display: block;
+    width: 100%;
     object-fit: cover;
 }
 
 .content .teacher-img {
-    width: 400px;
-    flex: 2;
+    float: left;
+    width: 20%;
     font-size: 33px;
     margin-right: 20px;
+    margin-left: 120px;
+    padding: 10px;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
 }
 
 .content .teacher-img p {
@@ -41,8 +44,10 @@
 }
 
 .teacher-introduction {
-    flex: 5;
-    margin: 30px;
+    float: right;
+    width: 65%;
+    border: 1px solid #f3f3f3;
+    padding: 40px;
 }
 
 .teacher-introduction p {

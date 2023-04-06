@@ -10,14 +10,6 @@
 
 /* 内容页面 */
 
-.clearfix:after {
-    content: "";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
-}
-
 .content {
     position: relative;
     width: 1400px;
