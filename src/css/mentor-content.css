@@ -30,17 +30,25 @@
 
 .content .teacher-img p {
     display: block;
-    text-align: center;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 400;
     font-family: "nav-font";
     padding: 10px;
+}
+
+.content .teacher-img p i {
+    font-weight: 600;
+    font-style: normal;
+    text-align: justify;
 }
 
 .content .teacher-img p:nth-of-type(1) {
     margin-top: 10px;
     border-bottom: 1px solid #eee;
-    /* font-size: 24px; */
+}
+
+.content .teacher-img p:nth-of-type(2) {
+    border-bottom: 1px solid #eee;
 }
 
 .teacher-introduction {
@@ -48,6 +56,7 @@
     width: 65%;
     border: 1px solid #f3f3f3;
     padding: 40px;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
 }
 
 .teacher-introduction p {
