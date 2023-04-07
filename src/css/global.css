@@ -841,3 +841,22 @@ table {
     font-size: 30px;
     line-height: 1.6;
 }
+
+.current-position .jump-list {
+    position: absolute;
+    bottom: -45px;
+    font-size: 20px;
+}
+
+.current-position .jump-list li {
+    float: left;
+    padding-right: 50px;
+}
+
+.current-position .jump-list li a:hover {
+    color: #006ec7;
+}
+
+.current-position .jump-list li a {
+    color: #2a3d89;
+}
