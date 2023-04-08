@@ -4,7 +4,7 @@
 
 .header,
 .header .show {
-    background-color: #2a3d89;
+    background-color: #21a675;
 }
 
 
@@ -37,7 +37,7 @@
     display: block;
     padding: 12px 35px;
     margin-bottom: 50px;
-    background-color: #2a3d89;
+    background-color: #21a675;
 }
 
 .content-li h3::before {
@@ -64,7 +64,7 @@
 }
 
 .content-li .list-detailed .list-body:hover h4 {
-    color: #2a3d89;
+    color: #21a675;
 }
 
 .content-list {

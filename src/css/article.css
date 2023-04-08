@@ -4,7 +4,7 @@
 
 .header,
 .header .show {
-    background-color: #2a3d89;
+    background-color: #21a675;
 }
 
 
@@ -21,19 +21,19 @@
 }
 
 .article-content h1 {
-    color: #2a3d89;
+    color: #21a675;
 }
 
 .article-content .article-header {
     justify-content: space-between;
     padding: 10px 0 15px;
-    border-bottom: 3px solid #2a3d89;
+    border-bottom: 3px solid #21a675;
     /* margin-bottom: 50px; */
 }
 
 .article-body .para-title {
     text-align: center;
-    color: #2a3d89;
+    color: #21a675;
 }
 
 .article-body .issue-info {

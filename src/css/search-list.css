@@ -4,7 +4,7 @@
 
 .header,
 .header .show {
-    background-color: #2a3d89;
+    background-color: #21a675;
 }
 
 
@@ -120,8 +120,8 @@
     display: inline-block !important;
     height: 32px !important;
     padding: 8px 12px !important;
-    border: solid 1px #2a3d89 !important;
-    background: #2a3d89 !important;
+    border: solid 1px #21a675 !important;
+    background: #21a675 !important;
     font-weight: bold !important;
     margin-right: 10px !important;
     line-height: 14px !important;
@@ -155,8 +155,8 @@
 }
 
 .pagination-table a:hover {
-    border: 1px solid #2a3d89 !important;
-    background-color: #2a3d89 !important;
+    border: 1px solid #21a675 !important;
+    background-color: #21a675 !important;
     color: white !important;
 }
 

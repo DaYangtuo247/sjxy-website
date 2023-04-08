@@ -86,7 +86,7 @@ body {
 
 .footer {
     padding: 42px 0 0;
-    background-color: #2a3d89;
+    background-color: #21a675;
     background-position: bottom;
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -183,7 +183,7 @@ body {
 
 .Copyright {
     padding: 10px 0;
-    border-top: 1px solid #5374f9;
+    border-top: 1px solid #14866e;
     text-align: center;
 }
 
@@ -304,7 +304,7 @@ body {
 .header.on {
     height: 0.8rem !important;
     background: none;
-    background-color: #2a3d89;
+    background-color: #21a675;
 }
 
 .header.on .logo img {
@@ -425,7 +425,7 @@ body {
 }
 
 #nav .sub_nav a:hover {
-    background: #2a3d89;
+    background: #21a675;
     color: #fff;
     pointer-events: auto;
 }
@@ -473,11 +473,11 @@ body {
 }
 
 #nav .sub_nav a:hover:before {
-    border-bottom: 10px solid #2a3d89 !important;
+    border-bottom: 10px solid #21a675 !important;
 }
 
 #nav .sub_nav.box-child a:hover:before {
-    border-right: 14px solid #2a3d89 !important;
+    border-right: 14px solid #21a675 !important;
 }
 
 #nav li:hover .sub_nav .box .li {
@@ -832,7 +832,7 @@ table {
     position: absolute;
     left: 25px;
     top: 0;
-    color: #2a3d89;
+    color: #21a675;
     font-size: 30px;
     line-height: 40px;
 }
@@ -858,5 +858,5 @@ table {
 }
 
 .current-position .jump-list li a {
-    color: #2a3d89;
+    color: #21a675;
 }

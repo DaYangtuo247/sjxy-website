@@ -139,7 +139,7 @@ ul li {
     top: -1px;
     bottom: -1px;
     width: 0;
-    background: #2a3d89;
+    background: #549688;
     display: none;
 }
 
@@ -243,7 +243,7 @@ svg {
     display: flex;
     align-items: center;
     line-height: 0.31rem;
-    color: #2a3d89;
+    color: #549688;
     position: absolute;
     right: 0;
     top: 0.15rem;
@@ -259,9 +259,9 @@ svg {
 }
 
 .intit h4 {
-    color: #2a3d89;
+    color: #549688;
     position: relative;
-    border-left: 2px solid #2a3d89;
+    border-left: 2px solid #549688;
     padding-left: 0.15rem;
     padding-top: 0.24rem;
 }
@@ -293,7 +293,7 @@ svg {
 }
 
 .homea-a {
-    background-color: rgba(24, 39, 122, 0.85);
+    background-image: linear-gradient(to bottom, #21a675, #4ab387, #68c099, #84cdab, #9edabe, #a8e2d1, #b7eae2, #c8f1f0, #d7f4fb, #e8f6ff, #f6faff, #ffffff);
     background-size: cover;
     padding: 40px 0 60px 0;
 }
@@ -386,7 +386,7 @@ svg {
 
 .homea .swiper-button-next,
 .homea .swiper-button-prev {
-    color: #2a3d89;
+    color: #549688;
     top: var(--swiper-navigation-top-offset, 40%) !important;
 }
 
@@ -442,12 +442,12 @@ svg {
     margin-right: 20px;
     width: 100px;
     height: 1px;
-    background-color: #2a3d89;
+    background-color: #549688;
 }
 
 .homeb .intit h4 {
-    color: #2a3d89;
-    border-left-color: #2a3d89;
+    color: #549688;
+    border-left-color: #549688;
     padding-top: 0;
 }
 
@@ -467,17 +467,17 @@ svg {
     width: 50%;
     padding: 0.7rem 0.5rem 0.6rem 0;
     border-right: 1px solid rgba(255, 255, 255, 0.15);
-    color: #2a3d89;
+    color: #549688;
 }
 
 .homeb a {
-    color: #2a3d89;
+    color: #549688;
 }
 
 .homeb .aright {
     width: 50%;
     padding: 0.7rem 0 0.6rem 0.5rem;
-    color: #2a3d89;
+    color: #549688;
 }
 
 .homeb .item a {
@@ -577,11 +577,11 @@ svg {
     margin-right: 20px;
     width: 500px;
     height: 1px;
-    background-color: #2a3d89;
+    background-color: #549688;
 }
 
 .homec-c .inmor:hover {
-    color: ##2a3d89;
+    color: ##549688;
     border-bottom: none;
 }
 
@@ -976,12 +976,12 @@ svg:not(:root) {
 }
 
 .homeb .item:hover .txt {
-    color: #2a3d89;
+    color: #549688;
 }
 
 .homeb .item:hover .txt span.aline_w {
-    color: #2a3d89;
-    background-image: linear-gradient(#2a3d89, #2a3d89);
+    color: #549688;
+    background-image: linear-gradient(#549688, #549688);
     background-size: 100% 1px;
 }
 
@@ -1032,13 +1032,13 @@ svg:not(:root) {
 }
 
 .homeb ul li:hover span.aline_w {
-    color: #2a3d89;
-    background-image: linear-gradient(#2a3d89, #2a3d89);
+    color: #549688;
+    background-image: linear-gradient(#549688, #549688);
     background-size: 100% 1px;
 }
 
 .homeb ul li:hover time {
-    color: #2a3d89;
+    color: #549688;
 }
 
 .homea .aright ul li .txt {
