@@ -11,7 +11,9 @@
     width: 1400px;
     margin: 180px auto 120px;
 }
-
+.content .breadcrumb li a:hover{
+    color: #21a675;
+}
 .content .teacher-img img {
     display: block;
     border-radius: 7px;

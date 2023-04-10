@@ -23,6 +23,10 @@
     margin-bottom: 50px;
 }
 
+
+.content .breadcrumb li a:hover{
+    color: #549688;
+}
 .content-li .list-detailed {
     float: left;
     width: 200px;
@@ -76,8 +80,9 @@
     color: #828282;
 }
 
-.current-page a:hover {
-    color: #006ec7;
+
+.current-page ul li a:hover {
+    color: #549688;
 }
 
 .list-body {
