@@ -293,7 +293,7 @@ svg {
 }
 
 .homea-a {
-    background-image: linear-gradient(to bottom, #21a675, #4ab387, #68c099, #84cdab, #9edabe, #a8e2d1, #b7eae2, #c8f1f0, #d7f4fb, #e8f6ff, #f6faff, #ffffff);
+    background-image: linear-gradient(to bottom, #21a675, #4ab387, #68c099, #84cdab, #9edabe, #a8e2d1, #a8e2d1, #a8e2d1, #a8e2d1, #a8e2d1, #a8e2d1, #ffffff);
     background-size: cover;
     padding: 40px 0 60px 0;
 }
