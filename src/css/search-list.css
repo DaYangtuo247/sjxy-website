@@ -25,6 +25,10 @@
     position: relative;
 }
 
+.search-content .search-header a:hover{
+    color: #549688;
+}
+
 .search-content .search-result {
     /* max-height根据实际情况来，自行修改 */
     /* max-height: 600px; */
@@ -111,17 +115,14 @@
     line-height: 14px !important;
 }
 
-
-/* 是这样吗页面跳转起来的话怎么做，是前端写的吗 */
-
 .pagination-table .this-page {
     color: white !important;
     font-size: 12px !important;
     display: inline-block !important;
     height: 32px !important;
     padding: 8px 12px !important;
-    border: solid 1px #21a675 !important;
-    background: #21a675 !important;
+    border: solid 1px #549688 !important;
+    background: #549688 !important;
     font-weight: bold !important;
     margin-right: 10px !important;
     line-height: 14px !important;
@@ -145,7 +146,7 @@
 }
 
 .breadcrumb li a:hover {
-    color: #006ec7;
+    color: #549688;
 }
 
 .search-result li span {
@@ -155,8 +156,8 @@
 }
 
 .pagination-table a:hover {
-    border: 1px solid #21a675 !important;
-    background-color: #21a675 !important;
+    border: 1px solid #549688 !important;
+    background-color: #549688 !important;
     color: white !important;
 }
 
