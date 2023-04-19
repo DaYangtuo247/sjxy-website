@@ -2,34 +2,6 @@
 
 ![](other-files/首页板块.png)
 
-## 关于`sjxy-web-old`
-
-这是之前学长们做的模拟后端，使用`asp.net core + C#`搭建，利用好这个可以为我们省下不少时间，环境部署如下：
-
-1. 安装asp.net sdk[下载 .NET 6.0 SDK - Windows x64](https://dotnet.microsoft.com/zh-cn/download/dotnet/thank-you/sdk-6.0.407-windows-x64-installer)
-2. 终端cd到`sjxy-web-old\CSTools\DevelopServer`路径下，然后执行`dotnet run`，示例如下
-
-### 输入
-
-```bash
-cd sjxy-web-old\CSTools\DevelopServer
-dotnet run
-```
-
-### 反馈结果
-
-```bash
-info: Microsoft.Hosting.Lifetime[14]
-      Now listening on: http://localhost:5000
-info: Microsoft.Hosting.Lifetime[0]
-      Application started. Press Ctrl+C to shut down.
-·····
-```
-
-浏览器打开`http://localhost:5000`即可
-
-
-
 ## 关于git
 
 * `git push`前先执行一次`git pull`
