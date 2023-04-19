@@ -1,9 +1,0 @@
-<#list list_news as news>
-  <h1 class="content-title">${news.showTitle}</h1>
-  <p>${news.content}</p>
-  <#list news.list_page as page>
-    <p>${page.content}</p>
-  </#list>
-  <div>${news.pageBar}</div>
-  <div>${news.attach}</div>
-</#list>
